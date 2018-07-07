@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- CurrencyMarketItem -->
+    <dimen name="currency_market_item_currency_text_size">14sp</dimen>
+    <dimen name="currency_market_item_market_text_size">10sp</dimen>
+    <dimen name="currency_market_item_volume_text_size">12sp</dimen>
+    <dimen name="currency_market_item_last_price_text_size">13sp</dimen>
+    <dimen name="currency_market_item_daily_change_width">80dp</dimen>
+    <dimen name="currency_market_item_daily_change_vertical_padding">5dp</dimen>
+    <dimen name="currency_market_item_daily_change_horizontal_padding">10dp</dimen>
+    <dimen name="currency_market_item_daily_change_text_size">12sp</dimen>
+
+    <!-- Navigation View -->
+    <dimen name="navigation_view_width">270dp</dimen>
+
+    <!-- OptionEditText -->
+    <dimen name="option_edit_text_padding">8dp</dimen>
+
+    <!-- TradeActivity -->
+    <dimen name="trade_activity_user_balance_title_text_size">16sp</dimen>
+    <dimen name="trade_activity_option_button_text_size">14sp</dimen>
+    <dimen name="trade_activity_input_text_size">16sp</dimen>
+    <dimen name="trade_activity_input_error_text_size">12sp</dimen>
+    <dimen name="trade_activity_details_container_option_tv_text_size">14sp</dimen>
+    <dimen name="trade_activity_button_margin">10dp</dimen>
+
+    <!-- DepositFragment -->
+    <dimen name="deposit_fragment_main_container_margin_top">15dp</dimen>
+    <dimen name="deposit_fragment_option_button_height">75dp</dimen>
+    <dimen name="deposit_fragment_option_button_text_size">16sp</dimen>
+    <dimen name="deposit_fragment_details_tv_text_size">14sp</dimen>
+
+</resources>

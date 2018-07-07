@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General -->
+    <dimen name="recycler_view_divider_size">2dp</dimen>
+
+    <!-- Navigation drawer -->
+    <dimen name="navigation_view_header_height">190dp</dimen>
+
+</resources>

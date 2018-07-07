@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/card_view_horizontal_margin"
+    android:layout_marginStart="@dimen/card_view_horizontal_margin"
+    android:layout_marginRight="@dimen/card_view_horizontal_margin"
+    android:layout_marginEnd="@dimen/card_view_horizontal_margin"
+    android:layout_marginBottom="@dimen/card_view_margin_bottom"
+    app:cardCornerRadius="@dimen/card_view_corner_radius"
+    app:cardElevation="@dimen/card_view_elevation"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/colorCardView">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/help_item_padding"
+        android:foreground="?attr/selectableItemBackground">
+
+        <RelativeLayout
+            android:id="@+id/headerFl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/questionTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@id/arrowIv"
+                android:layout_toStartOf="@id/arrowIv"
+                android:layout_marginRight="@dimen/help_item_question_tv_margin_right"
+                android:layout_marginEnd="@dimen/help_item_question_tv_margin_right"
+                android:textSize="@dimen/help_item_question_tv_size"
+                android:textColor="@color/colorSecondaryText"
+                android:textStyle="bold"
+                tools:text="Do you believe the Governments hide ?"/>
+
+            <ImageView
+                android:id="@+id/arrowIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_menu_down"/>
+
+        </RelativeLayout>
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/answerEl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/headerFl"
+            app:el_duration="@integer/help_item_answer_tv_animation_duration"
+            app:el_expanded="false">
+
+            <TextView
+                android:id="@+id/answerTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/help_item_answer_tv_margin_top"
+                android:layout_marginRight="@dimen/help_item_answer_tv_margin_right"
+                android:layout_marginEnd="@dimen/help_item_answer_tv_margin_right"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/help_item_answer_tv_text_size"
+                tools:text="Maddie Rooney stopped Meghan Agosta on her second try of Thursday's shootout to clinch it. Rooney stopped 29 shots in regulation and the 20-minute overtime. Shannon Szabados made 39 saves for Canada, which had won four straight Olympic gold medals."/>
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

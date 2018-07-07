@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General -->
+    <dimen name="recycler_view_padding_top">8dp</dimen>
+    <dimen name="recycler_view_padding_bottom">4dp</dimen>
+    <dimen name="recycler_view_horizontal_padding">15dp</dimen>
+    <dimen name="recycler_view_divider_size">4dp</dimen>
+
+    <!-- Navigation View -->
+    <dimen name="navigation_view_width">330dp</dimen>
+    <dimen name="navigation_view_header_height">200dp</dimen>
+
+    <!-- Dashboard -->
+    <dimen name="currency_markets_sort_panel_horizontal_padding">30dp</dimen>
+
+    <!-- SummaryFragment -->
+    <dimen name="summary_fragment_option_button_text_size">18sp</dimen>
+
+    <!-- ChartFragment -->
+    <dimen name="chart_fragment_chart_axis_text_size">12px</dimen> <!-- Has to be in PX due to MPAndroidChart -->
+    <dimen name="chart_fragment_chart_value_text_size">12px</dimen> <!-- Has to be in PX due to MPAndroidChart -->
+
+    <!-- TradeActivity -->
+    <dimen name="trade_activity_option_button_vertical_padding">12dp</dimen>
+    <dimen name="deposit_fragment_hint_tv_text_size">14sp</dimen>
+    <dimen name="deposit_fragment_deposit_fee_tv_margin_top">50dp</dimen>
+
+    <!-- DepositFragment -->
+    <dimen name="deposit_fragment_option_button_height">100dp</dimen>
+
+    <!-- SettingsActivity -->
+    <dimen name="settings_activity_recycler_view_vertical_padding">15dp</dimen>
+    <dimen name="settings_activity_recycler_view_horizontal_padding">@dimen/recycler_view_horizontal_padding</dimen>
+
+</resources>

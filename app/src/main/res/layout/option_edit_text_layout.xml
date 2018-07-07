@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:parentTag="android.widget.RelativeLayout"
+    tools:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/option_edit_text_padding"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        tools:text="Amount"
+        tools:textColor="@color/colorSecondaryText"
+        tools:textSize="20sp"
+        style="@style/SingleLineTextView"/>
+
+    <RelativeLayout
+        android:id="@+id/inputContainerRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTv"
+        tools:background="@color/colorOptionEditTextInput">
+
+        <EditText
+            android:id="@+id/inputEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/labelTv"
+            android:layout_toStartOf="@+id/labelTv"
+            android:padding="@dimen/option_edit_text_padding"
+            android:background="@null"
+            tools:textCursorDrawable="@drawable/edit_text_cursor_drawable"
+            tools:hint="Enter your amount here..."
+            tools:textSize="18sp"
+            tools:textColor="@color/colorPrimaryText"
+            tools:textColorHint="@color/colorOptionEditTextInputHint"/>
+
+        <TextView
+            android:id="@+id/labelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/option_edit_text_padding"
+            android:textStyle="bold"
+            tools:text="XBCN"
+            tools:textColor="@color/colorPrimaryText"
+            tools:textSize="18sp"
+            style="@style/SingleLineTextView"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/errorTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputContainerRl"
+        android:layout_marginTop="@dimen/option_edit_text_padding"
+        android:layout_marginLeft="@dimen/option_edit_text_padding"
+        android:layout_marginStart="@dimen/option_edit_text_padding"
+        android:layout_marginRight="@dimen/option_edit_text_padding"
+        android:layout_marginEnd="@dimen/option_edit_text_padding"
+        android:textStyle="bold"
+        tools:text="Enter valid amount address"
+        tools:textSize="14sp"
+        tools:textColor="@color/colorRedAccent"/>
+
+</merge>

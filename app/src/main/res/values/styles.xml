@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/colorDrawerArrow</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash_activity_bg</item>
+    </style>
+
+    <style name="LoginTheme" parent="AppTheme"/>
+
+    <style name="DashboardTheme" parent="AppTheme"/>
+
+    <style name="SingleLineTextView">
+        <item name="android:maxLines">1</item>
+        <item name="android:minLines">1</item>
+        <item name="android:lines">1</item>
+    </style>
+
+    <style name="TitleTextView" parent="SingleLineTextView">
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+    </style>
+
+    <style name="CurrencyMarketsSortPanelTitle" parent="SingleLineTextView">
+        <item name="android:textColor">@color/colorMarketsSortPanelUnselected</item>
+        <item name="android:textSize">@dimen/currency_markets_sort_panel_title_size</item>
+    </style>
+
+    <style name="NavigationView">
+        <item name="android:listDivider">@color/colorDivider</item>
+    </style>
+
+    <style name="NavigationViewHeaderUserName" parent="SingleLineTextView">
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:textSize">@dimen/navigation_view_header_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="NavigationViewHeaderEmail" parent="SingleLineTextView">
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:textSize">@dimen/navigation_view_header_text_size</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="NavigationViewItemText">
+        <item name="android:textSize">@dimen/navigation_view_item_text_size</item>
+        <item name="android:textColor">@color/colorNavigationViewItem</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="PrimaryButton" parent="SingleLineTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/primary_button_height</item>
+        <item name="android:paddingLeft">@dimen/primary_button_horizontal_padding</item>
+        <item name="android:paddingStart">@dimen/primary_button_horizontal_padding</item>
+        <item name="android:paddingRight">@dimen/primary_button_horizontal_padding</item>
+        <item name="android:paddingEnd">@dimen/primary_button_horizontal_padding</item>
+        <item name="android:drawablePadding">@dimen/primary_button_drawable_padding</item>
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/primary_button_text_size</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minEms">10</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="SecondaryButton" parent="SingleLineTextView">
+        <item name="android:paddingTop">@dimen/secondary_button_vertical_padding</item>
+        <item name="android:paddingBottom">@dimen/secondary_button_vertical_padding</item>
+        <item name="android:paddingLeft">@dimen/secondary_button_horizontal_padding</item>
+        <item name="android:paddingStart">@dimen/secondary_button_horizontal_padding</item>
+        <item name="android:paddingRight">@dimen/secondary_button_horizontal_padding</item>
+        <item name="android:paddingEnd">@dimen/secondary_button_horizontal_padding</item>
+        <item name="android:foreground">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/secondary_button_text_size</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CurrencyMarketCurrency" parent="SingleLineTextView">
+        <item name="android:textColor">@color/colorSecondaryText</item>
+        <item name="android:textSize">@dimen/currency_market_item_currency_text_size</item>
+    </style>
+
+    <style name="CurrencyMarketMarket" parent="SingleLineTextView">
+        <item name="android:textColor">@color/colorSecondaryTextDark</item>
+        <item name="android:textSize">@dimen/currency_market_item_market_text_size</item>
+    </style>
+
+    <style name="CurrencyMarketVolume" parent="SingleLineTextView">
+        <item name="android:textColor">@color/colorSecondaryText</item>
+        <item name="android:textSize">@dimen/currency_market_item_volume_text_size</item>
+    </style>
+
+    <style name="CurrencyMarketLastPrice" parent="SingleLineTextView">
+        <item name="android:textColor">@color/colorSecondaryText</item>
+        <item name="android:textSize">@dimen/currency_market_item_last_price_text_size</item>
+    </style>
+
+    <style name="CurrencyMarketDailyChange" parent="SingleLineTextView">
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/currency_market_item_daily_change_text_size</item>
+    </style>
+
+    <style name="AboutHeaderAppName" parent="SingleLineTextView">
+        <item name="android:textSize">@dimen/about_activity_header_app_name_text_size</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AboutHeaderAppVersion" parent="SingleLineTextView">
+        <item name="android:textSize">@dimen/about_activity_header_app_version_text_size</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AboutHeaderAppDescription">
+        <item name="android:textSize">@dimen/about_activity_header_description_text_size</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+    </style>
+
+    <style name="TradeUserBalancesTitle" parent="SingleLineTextView">
+        <item name="android:textColor">@color/colorSecondaryText</item>
+        <item name="android:textSize">@dimen/trade_activity_user_balance_title_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

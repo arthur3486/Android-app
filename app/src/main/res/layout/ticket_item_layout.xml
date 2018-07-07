@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/card_view_horizontal_margin"
+    android:layout_marginStart="@dimen/card_view_horizontal_margin"
+    android:layout_marginRight="@dimen/card_view_horizontal_margin"
+    android:layout_marginEnd="@dimen/card_view_horizontal_margin"
+    android:layout_marginBottom="@dimen/card_view_margin_bottom"
+    app:cardCornerRadius="@dimen/card_view_corner_radius"
+    app:cardElevation="@dimen/card_view_elevation"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/colorCardView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/ticket_item_padding"
+        android:orientation="vertical"
+        android:foreground="?attr/selectableItemBackground">
+
+        <TextView
+            android:id="@+id/statusTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/ticket_item_status_tv_margin_bottom"
+            tools:text="AWAITING SUPPORT RESPONSE"
+            tools:textColor="@color/colorBlueAccent"
+            style="@style/SecondaryButton"/>
+
+        <com.stocksexchange.android.ui.views.DottedOptionTextView
+            android:id="@+id/idDotv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ticket_item_dotv_margin_bottom"
+            app:title="@string/id"
+            app:titleSize="@dimen/ticket_item_dotv_text_size"
+            app:titleColor="@color/colorDottedOptionText"
+            app:valueSize="@dimen/ticket_item_dotv_text_size"
+            app:valueColor="@color/colorDottedOptionText"
+            app:separatorColor="@color/colorDottedOptionText"
+            tools:value="30820"/>
+
+        <com.stocksexchange.android.ui.views.DottedOptionTextView
+            android:id="@+id/categoryDotv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ticket_item_dotv_margin_bottom"
+            app:title="@string/category"
+            app:titleSize="@dimen/ticket_item_dotv_text_size"
+            app:titleColor="@color/colorDottedOptionText"
+            app:valueSize="@dimen/ticket_item_dotv_text_size"
+            app:valueColor="@color/colorYellowAccent"
+            app:separatorColor="@color/colorDottedOptionText"
+            tools:value="Order Problem"/>
+
+        <com.stocksexchange.android.ui.views.DottedOptionTextView
+            android:id="@+id/subjectDotv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ticket_item_dotv_margin_bottom"
+            app:title="@string/subject"
+            app:titleSize="@dimen/ticket_item_dotv_text_size"
+            app:titleColor="@color/colorDottedOptionText"
+            app:valueSize="@dimen/ticket_item_dotv_text_size"
+            app:valueColor="@color/colorDottedOptionText"
+            app:separatorColor="@color/colorDottedOptionText"
+            tools:value="Can't withdraw bitcoin…"/>
+
+        <com.stocksexchange.android.ui.views.DottedOptionTextView
+            android:id="@+id/updatedAtDotv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ticket_item_dotv_margin_bottom"
+            app:title="@string/updated_at"
+            app:titleSize="@dimen/ticket_item_dotv_text_size"
+            app:titleColor="@color/colorDottedOptionText"
+            app:valueSize="@dimen/ticket_item_dotv_text_size"
+            app:valueColor="@color/colorDottedOptionText"
+            app:separatorColor="@color/colorDottedOptionText"
+            tools:value="2018-04-12 06:49:51 PM"/>
+
+        <com.stocksexchange.android.ui.views.DottedOptionTextView
+            android:id="@+id/createdAtDotv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/created_at"
+            app:titleSize="@dimen/ticket_item_dotv_text_size"
+            app:titleColor="@color/colorDottedOptionText"
+            app:valueSize="@dimen/ticket_item_dotv_text_size"
+            app:valueColor="@color/colorDottedOptionText"
+            app:separatorColor="@color/colorDottedOptionText"
+            tools:value="2018-04-18 07:09:17 PM"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

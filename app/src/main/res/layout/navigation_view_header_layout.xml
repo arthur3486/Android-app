@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/headerRl"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/navigation_view_header_height"
+    android:fitsSystemWindows="@bool/fitsSystemWindows"
+    android:background="@drawable/particles_gradient_land_bg">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fitsSystemWindows="@bool/fitsSystemWindows"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <com.stocksexchange.android.ui.views.MarkableImageView
+            android:id="@+id/profilePictureIv"
+            android:layout_width="@dimen/navigation_view_header_profile_picture_size"
+            android:layout_height="@dimen/navigation_view_header_profile_picture_size"
+            android:padding="@dimen/navigation_view_header_profile_picture_padding"
+            tools:src="@mipmap/ic_launcher_large"/>
+
+        <Button
+            android:id="@+id/signInBtn"
+            android:layout_marginTop="@dimen/navigation_view_header_profile_picture_margin_bottom"
+            android:text="@string/navigation_view_header_sign_in_button_title"
+            android:stateListAnimator="@null"
+            android:visibility="gone"
+            style="@style/PrimaryButton"/>
+
+        <TextView
+            android:id="@+id/userNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/navigation_view_header_profile_picture_margin_bottom"
+            android:layout_marginLeft="@dimen/navigation_view_header_margin"
+            android:layout_marginStart="@dimen/navigation_view_header_margin"
+            android:layout_marginRight="@dimen/navigation_view_header_margin"
+            android:layout_marginEnd="@dimen/navigation_view_header_margin"
+            tools:text="Username"
+            style="@style/NavigationViewHeaderUserName"/>
+
+        <TextView
+            android:id="@+id/emailTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/navigation_view_header_margin"
+            android:layout_marginStart="@dimen/navigation_view_header_margin"
+            android:layout_marginRight="@dimen/navigation_view_header_margin"
+            android:layout_marginEnd="@dimen/navigation_view_header_margin"
+            tools:text="some.email@gmail.com"
+            style="@style/NavigationViewHeaderEmail"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

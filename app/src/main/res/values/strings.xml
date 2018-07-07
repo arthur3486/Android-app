@@ -1,0 +1,370 @@
+<resources>
+
+    <!-- General -->
+    <string name="app_name">Stocks Exchange</string>
+    <string name="app_motto">Distribute profits to kickstart your small business</string>
+
+    <string name="wallets">Wallets</string>
+    <string name="orders">Orders</string>
+    <string name="deposits">Deposits</string>
+    <string name="withdrawals">Withdrawals</string>
+    <string name="tickets">Tickets</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="feedback">Feedback</string>
+    <string name="help">Help</string>
+    <string name="favorites">Favorites</string>
+
+    <string name="terms_of_use">Terms of Use</string>
+
+    <string name="action_share_via">Share via…</string>
+    <string name="action_buy">Buy</string>
+    <string name="action_sell">Sell</string>
+    <string name="action_ask">Ask</string>
+    <string name="action_bid">Bid</string>
+    <string name="action_deposit">Deposit</string>
+    <string name="action_withdraw">Withdraw</string>
+    <string name="action_spent">Spent</string>
+    <string name="action_received">Received</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_show_zero_balances">Show Zero Balances</string>
+    <string name="action_hide_zero_balances">Hide Zero Balances</string>
+
+    <string name="trade">Trade</string>
+    <string name="trade_type_buy">BUY</string>
+    <string name="trade_type_sell">SELL</string>
+
+    <string name="state_active">Active</string>
+    <string name="state_disabled">Disabled</string>
+
+    <string name="transaction_status_finished">FINISHED</string>
+    <string name="transaction_status_awaiting_confirmations">AWAITING CONFIRMATIONS</string>
+    <string name="transaction_status_email_sent">EMAIL SENT</string>
+    <string name="transaction_status_cancelled_by_user">CANCELLED BY USER</string>
+    <string name="transaction_status_awaiting_approval">AWAITING APPROVAL</string>
+    <string name="transaction_status_approved">APPROVED</string>
+    <string name="transaction_status_not_confirmed">NOT CONFIRMED</string>
+    <string name="transaction_status_processing">PROCESSING</string>
+    <string name="transaction_status_withdrawal_error">WITHDRAWAL ERROR</string>
+    <string name="transaction_status_cancelled_by_admin">CANCELLED BY ADMIN</string>
+
+    <string name="ticket_status_awaiting_support_response">Awaiting Support Response</string>
+    <string name="ticket_status_awaiting_customer_response">Awaiting Customer Response</string>
+    <string name="ticket_status_closed">Closed</string>
+
+    <string name="ticket_category_order_problem">Order Problem</string>
+    <string name="ticket_category_deposit_problem">Deposit Problem</string>
+    <string name="ticket_category_withdrawal_problem">Withdrawal Problem</string>
+    <string name="ticket_category_dividend_problem">Dividend Problem</string>
+    <string name="ticket_category_other">Other</string>
+
+    <string-array name="ticket_categories">
+        <item>@string/ticket_category_order_problem</item>
+        <item>@string/ticket_category_deposit_problem</item>
+        <item>@string/ticket_category_withdrawal_problem</item>
+        <item>@string/ticket_category_dividend_problem</item>
+        <item>@string/ticket_category_other</item>
+    </string-array>
+
+    <string name="last_price">Last Price</string>
+    <string name="at_price">At Price</string>
+    <string name="fee">Fee</string>
+    <string name="address">Address</string>
+    <string name="id">ID</string>
+    <string name="transaction_id">Transaction ID</string>
+    <string name="amount">Amount</string>
+    <string name="price">Price</string>
+    <string name="income">Income</string>
+    <string name="date">Date</string>
+    <string name="your_balance">Your Balance</string>
+    <string name="status">Status</string>
+    <string name="currency">Currency</string>
+    <string name="daily_max_buy">24hr Max Buy</string>
+    <string name="daily_min_sell">24hr Min Sell</string>
+    <string name="daily_change">24hr Change</string>
+    <string name="daily_volume">24hr Volume</string>
+    <string name="min_order_amount">Min Order Amount</string>
+    <string name="buy_fee_percent">Buy Fee</string>
+    <string name="sell_fee_percent">Sell Fee</string>
+    <string name="available_balance">Available Balance</string>
+    <string name="balance_in_orders">Balance In Orders</string>
+    <string name="name">Name</string>
+    <string name="search_deposits">Search deposits</string>
+    <string name="search_withdrawals">Search withdrawals</string>
+    <string name="deposit_address">Deposit Address</string>
+    <string name="public_key">Public Key</string>
+    <string name="payment_id">Payment ID</string>
+    <string name="category">Category</string>
+    <string name="subject">Subject</string>
+    <string name="updated_at">Updated At</string>
+    <string name="created_at">Created At</string>
+    <string name="dividends">Dividends</string>
+    <string name="other">Other</string>
+    <string name="account">Account</string>
+    <string name="general">General</string>
+    <string name="notifications">Notifications</string>
+    <string name="debug">Debug</string>
+    <string name="period">Period</string>
+    <string name="comma">Comma</string>
+    <string name="decimal_separator">Decimal Separator</string>
+    <string name="restore_defaults">Restore Defaults</string>
+    <string name="sounds">Sounds</string>
+    <string name="vibration">Vibration</string>
+    <string name="phone_led">Phone LED</string>
+    <string name="notification_ringtone">Notification Ringtone</string>
+    <string name="device_metrics">Device Metrics</string>
+    <string name="device_metrics_description">Show device specific metrics for debugging</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="sign_out_template">Sign out of @%s</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ringtones">Ringtones</string>
+    <string name="active">active</string>
+
+    <string name="completed_order_type">completed</string>
+    <string name="cancelled_order_type">cancelled</string>
+    <string name="public_order_type">public</string>
+
+    <string-array name="decimal_separators">
+        <item>@string/period</item>
+        <item>@string/comma</item>
+    </string-array>
+
+    <!-- Days -->
+    <string name="monday_short">Mon</string>
+    <string name="tuesday_short">Tue</string>
+    <string name="wednesday_short">Wed</string>
+    <string name="thursday_short">Thu</string>
+    <string name="friday_short">Fri</string>
+    <string name="saturday_short">Sat</string>
+    <string name="sunday_short">Sun</string>
+
+    <!-- Months -->
+    <string name="january_short">Jan</string>
+    <string name="february_short">Feb</string>
+    <string name="march_short">Mar</string>
+    <string name="april_short">Apr</string>
+    <string name="may_short">May</string>
+    <string name="june_short">Jun</string>
+    <string name="july_short">Jul</string>
+    <string name="august_short">Aug</string>
+    <string name="september_short">Sep</string>
+    <string name="october_short">Oct</string>
+    <string name="november_short">Nov</string>
+    <string name="december_short">Dec</string>
+
+    <!-- Toasts -->
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+    <string name="order_created">The order has been successfully created!</string>
+    <string name="order_cancelled">The order has been successfully cancelled!</string>
+    <string name="withdrawals_disabled">Due to security concerns, withdrawals are disabled on mobile phones at the moment and only available on our website.</string>
+    <string name="qr_code_image_downloaded">The image has been successfully saved!</string>
+    <string name="market_not_found">Could not find the specified market!</string>
+
+    <!-- Error messages -->
+    <string name="error_permissions_not_granted">Permissions not granted! Unable to proceed.</string>
+    <string name="error_server_not_responding">The server is not responding! Please try again later.</string>
+    <string name="error_too_many_requests">The server denied the request! Please try again in a minute.</string>
+    <string name="error_something_went_wrong">Oops! Something went wrong.</string>
+    <string name="error_security_provider">Failed to update a security provider! Make sure you have the latest version of Google Play Services and try again.</string>
+    <string name="error_check_network_connection">Please check your network connection.</string>
+    <string name="error_malformed_qr_code">The provided QR code is malformed.</string>
+    <string name="error_user_not_found">Could not find the user with specified credentials.</string>
+    <string name="error_no_email_client">The email client was not found! Unable to proceed.</string>
+    <string name="error_exchange_disabled">This exchange is currently disabled! Please try again later.</string>
+    <string name="error_amount_too_small">The amount should be at least %s</string>
+    <string name="error_balance_too_small">You don\'t have enough %s on your balance</string>
+    <string name="error_price_is_not_positive">The price should be positive</string>
+    <string name="error_no_summary_available">No summary available.</string>
+    <string name="error_no_chart_data_available">No chart data available.</string>
+    <string name="error_no_active_orders_available">No active orders available.</string>
+    <string name="error_no_completed_orders_available">No completed orders available.</string>
+    <string name="error_no_cancelled_orders_available">No cancelled orders available.</string>
+    <string name="error_no_public_orders_available">No public orders available.</string>
+    <string name="error_no_deposits_available">No deposits available.</string>
+    <string name="error_no_withdrawals_available">No withdrawals available.</string>
+    <string name="error_no_data_available">No data available.</string>
+    <string name="error_not_available">Not available</string>
+    <string name="error_invalid_currency">Can\'t get currency wallet information. Please try again later.</string>
+    <string name="error_currency_disabled">The currency is disabled due to technical works. Please try again later.</string>
+    <string name="error_no_tickets_available">No tickets available.</string>
+
+    <!-- Login -->
+    <string name="login_hint">Scan QR code provided in your account settings at our website stocks.exchange</string>
+
+    <!-- Dashboard related -->
+    <string name="dashboard_toolbar_title">Markets</string>
+
+    <string name="dashboard_drawer_open">Open navigation drawer</string>
+    <string name="dashboard_drawer_close">Close navigation drawer</string>
+
+    <!-- CurrencyMarketsSortPanel -->
+    <string name="currency_markets_sort_panel_volume_title">Vol</string>
+    <string name="currency_markets_sort_panel_daily_change_title">24h Chg%</string>
+
+    <!-- NavigationView -->
+    <string name="navigation_view_header_sign_in_button_title">Sign In</string>
+
+    <!-- CurrencyMarketsFragment -->
+    <string name="currency_markets_fragment_empty_view_caption">No %s markets</string>
+    <string name="currency_markets_fragment_search_initial_message">Search for specific markets</string>
+    <string name="currency_markets_fragment_no_favorite_markets_message">No favorite markets</string>
+    <string name="currency_markets_fragment_search_no_markets_found_template">No markets found for\n\"%1$s\"</string>
+
+    <!-- CurrencyMarketsSearchActivity -->
+    <string name="currency_markets_search_activity_toolbar_query_input_hint">Search markets</string>
+
+    <!-- CurrencyMarketItem -->
+    <string name="currency_market_item_volume_template">Vol %s</string>
+
+    <!-- Feedback -->
+    <string name="feedback_greeting_text">Hello!</string>
+    <string name="feedback_detailed_message_text">
+        Noticed a bug or have a suggestion? \n\nPlease, let us know. Where
+        possible, we will look to use it to improve our app and the most useful
+        ones will be rewarded with the STEX coin.\n\nHelp us make this app even better!
+    </string>
+
+    <string name="feedback_footer_new_feedback_title">New Feedback</string>
+    <string name="feedback_footer_send_button_text">Send</string>
+    <string name="feedback_footer_feedback_text_et_hint">Please enter your feedback here…</string>
+
+    <!-- AboutActivity related -->
+    <string name="about_activity_app_version_template">version %s</string>
+    <string name="about_activity_header_description">
+        Stocks Exchange is one of the most easy-to-use trading platforms worldwide.
+        Simplicity and comfort of our marketing platform allows you to invest in any
+        business all over the world. Just in one click buy or sell any your coins,
+        assets or tokens on major crypto platforms and do your business online.
+    </string>
+
+    <string name="about_activity_feature_crypto_caption">Trade for any crypto</string>
+    <string name="about_activity_feature_audit_caption">Strong internal audit</string>
+    <string name="about_activity_feature_storage_caption">Secure storage</string>
+
+    <string name="about_activity_website_button_text">Visit our website</string>
+
+    <!-- Custom tabs related -->
+    <string name="menu_item_share_via">Share via…</string>
+    <string name="menu_item_copy_link">Copy link</string>
+
+    <!-- CurrencyMarketPreviewActivity -->
+    <string name="currency_market_preview_tab_summary_title">SUMMARY</string>
+    <string name="currency_market_preview_tab_chart_title">CHART</string>
+    <string name="currency_market_preview_tab_orders_title">ORDERS</string>
+
+    <!-- TradeActivity -->
+    <string name="trade_activity_amount_edit_text_hint">Minimum: %s</string>
+    <string name="trade_activity_fee_title_text">Fee:</string>
+    <string name="trade_activity_user_deduction_title_text">You Give:</string>
+    <string name="trade_activity_user_addition_title_text">You Get:</string>
+    <string name="trade_activity_buy_button_template">Buy %1$s For %2$s</string>
+    <string name="trade_activity_sell_button_template">Sell %1$s For %2$s</string>
+
+    <!-- Chart related -->
+    <string name="chart_data_interval_one_day">1D</string>
+    <string name="chart_data_interval_one_week">1W</string>
+    <string name="chart_data_interval_one_month">1M</string>
+    <string name="chart_data_interval_three_months">3M</string>
+
+    <!-- WalletsSearchActivity -->
+    <string name="wallets_search_activity_input_hint_text">Search wallets</string>
+
+    <!-- WalletsFragment -->
+    <string name="wallets_fragment_info_view_caption">No wallets available!</string>
+    <string name="wallets_fragment_search_initial_message">Search for specific wallets</string>
+    <string name="wallets_fragment_search_no_wallets_found_template">No wallets found for\n\"%1$s\"</string>
+
+    <!-- OrdersActivity -->
+    <string name="orders_activity_tab_active_orders_title">ACTIVE</string>
+    <string name="orders_activity_tab_completed_orders_title">COMPLETED</string>
+    <string name="orders_activity_tab_cancelled_orders_title">CANCELLED</string>
+
+    <!-- TransactionsFragment -->
+    <string name="transactions_fragment_search_deposits_initial_message">Search for specific deposits</string>
+    <string name="transactions_fragment_search_withdrawals_initial_message">Search for specific withdrawals</string>
+    <string name="transactions_fragment_search_no_deposits_found_template">No deposits found for\n\"%1$s\"</string>
+    <string name="transactions_fragment_search_no_withdrawals_found_template">No withdrawals found for\n\"%1$s\"</string>
+
+    <!-- DepositFragment -->
+    <string name="deposit_fragment_deposit_fee_template">Deposit Fee: %s</string>
+    <string name="deposit_fragment_min_amount_template">Min Amount: %s</string>
+    <string name="deposit_fragment_warning_template">Warning!\n\nSend only %s to this address. Sending any other currency to this address may result in the loss of your deposit.</string>
+    <string name="deposit_fragment_hint_text">Hint: click to copy and long click to show QR code</string>
+
+    <!-- QrDialog -->
+    <string name="qr_dialog_copy_hash_btn_text">Copy</string>
+    <string name="qr_dialog_save_image_btn_text">Save Image</string>
+
+    <!-- TicketsSearchActivity -->
+    <string name="tickets_search_activity_input_hint_text">Search tickets</string>
+
+    <!-- TicketsFragment -->
+    <string name="tickets_fragment_info_view_caption">No tickets available!</string>
+    <string name="tickets_fragment_search_initial_message">Search for specific tickets</string>
+    <string name="tickets_fragment_search_no_wallets_found_template">No tickets found for\n\"%1$s\"</string>
+
+    <!-- TicketCreationActivity -->
+    <string name="ticket_creation_toolbar_title">Create Ticket</string>
+    <string name="ticket_creation_subject_et_hint">Enter your subject…</string>
+    <string name="ticket_creation_message_et_hint">Enter your message…</string>
+
+    <!-- HelpActivity -->
+    <string name="help_item_too_many_requests_question">What does \"The server denied the request…\" message mean?</string>
+    <string name="help_item_too_many_requests_answer">
+        Due to server API limitations, the app is allowed to perform no more than 10 requests per minute. If you see the
+        aforementioned message, it means you performed more than 10 requests and the server started denying requests.
+        The message goes away usually in less than 30 seconds.
+    </string>
+    <string name="help_item_server_unresponsive_question">What does \"The server is not responding…\" message mean?</string>
+    <string name="help_item_server_unresponsive_answer">
+        It usually means that the server is offline and, as a result, the request cannot be fulfilled. To get notified when
+        stuff like this happens, please follow our Twitter page or join our Telegram channel.
+    </string>
+    <string name="help_item_something_went_wrong_question">What should I do if I see \"Oops! Something went wrong.\" message?</string>
+    <string name="help_item_something_went_wrong_answer">
+        The best option would be to go to the \"Feedback\" section and provide us with as much detail as possible about
+        the nature of the message so that we can investigate and fix it.
+    </string>
+    <string name="help_item_no_withdrawals_question">Why does the app not support withdrawals?</string>
+    <string name="help_item_no_withdrawals_answer">
+        Due to security concerns, withdrawals are disabled on mobile phones at the moment and only available on our website.
+    </string>
+    <string name="help_item_exchange_disabled_question">What are the reasons for a currency to be disabled?</string>
+    <string name="help_item_exchange_disabled_answer">
+        The currency can be disabled due to the following reasons: technical works (update, upgrade, SWAP, etc.) or currency delisting.
+        To stay tuned, please follow our Twitter page or join our Telegram channel.
+    </string>
+    <string name="help_item_tickets_vs_feedback_question">What is the difference between feedback and tickets? When should I use each one?</string>
+    <string name="help_item_tickets_vs_feedback_answer">
+        The feedback was created exclusively for app-related problems and questions while tickets (directly supported by API and our website) were
+        created to deal with users\' questions and problems regarding trading. To sum up, use tickets whenever you have a trading problem
+        (orders, deposits, withdrawals, etc.) and feedback if you have remarks, suggestions or have something to say about the app overall.
+    </string>
+    <string name="help_item_fiat_money_recharge_question">How do I recharge my account in fiat money?</string>
+    <string name="help_item_fiat_money_recharge_answer">
+        Stocks.exchange is crypto-currency only exchange. The deposits in fiat currencies such as US dollars, Euro, and other
+        are not supported.
+    </string>
+    <string name="help_item_assets_dividends_question">How do I receive dividends on assets?</string>
+    <string name="help_item_assets_dividends_answer">
+        All assets traded on stocks.exchange will automatically receive dividends spread through the NXT dividend payment option or via
+        direct deposit to a hot wallet. You don\'t need to do anything specific, simply trade and get dividends!
+    </string>
+    <string name="help_item_stex_question">What is STEX?</string>
+    <string name="help_item_stex_answer">STEX is stocks.exchange shares issued as NXT assets.</string>
+
+    <!-- SettingsActivity -->
+    <string name="settings_activity_sign_out_dialog_title_text">Sign Out?</string>
+    <string name="settings_activity_sign_out_dialog_text">Are you sure you want to sign out?</string>
+    <string name="settings_activity_restore_defaults_dialog_title_text">Restore Default Settings?</string>
+    <string name="settings_activity_restore_defaults_dialog_text">Are you sure you want to restore to default settings?</string>
+
+    <!-- OrdersSearchActivity -->
+    <string name="orders_search_activity_hint_template">Search %s orders</string>
+
+    <!-- OrdersFragment -->
+    <string name="orders_fragment_search_no_orders_found_template">No orders found for\n\"%1$s\"</string>
+    <string name="orders_fragment_search_initial_message">Search for specific orders</string>
+
+</resources>

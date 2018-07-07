@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General -->
+    <dimen name="dashboard_coordinator_layout_margin_left">@dimen/navigation_view_width</dimen>
+    <dimen name="recycler_view_horizontal_padding">100dp</dimen>
+
+    <!-- Dashboard -->
+    <dimen name="currency_markets_sort_panel_horizontal_padding">115dp</dimen>
+
+    <!-- Navigation drawer -->
+    <dimen name="navigation_view_width">350dp</dimen>
+    <dimen name="navigation_view_header_height">220dp</dimen>
+
+    <!-- SettingsActivity -->
+    <dimen name="settings_activity_recycler_view_vertical_padding">15dp</dimen>
+    <dimen name="settings_activity_recycler_view_horizontal_padding">@dimen/recycler_view_horizontal_padding</dimen>
+
+</resources>

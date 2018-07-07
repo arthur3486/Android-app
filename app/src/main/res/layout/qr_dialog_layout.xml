@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/qr_dialog_padding"
+    android:background="@color/colorQrDialogBackground">
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorQrDialogText"
+        android:textSize="@dimen/qr_dialog_title_text_size"
+        android:textStyle="bold"
+        tools:text="BTC Deposit Address"/>
+
+    <ImageView
+        android:id="@+id/qrCodeIv"
+        android:layout_width="@dimen/qr_dialog_qr_code_iv_size"
+        android:layout_height="@dimen/qr_dialog_qr_code_iv_size"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/qr_dialog_qr_code_margin_top"
+        tools:srcCompat="@drawable/ic_btc"/>
+
+    <TextView
+        android:id="@+id/hashTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/qr_dialog_hash_margin_top"
+        android:textColor="@color/colorQrDialogText"
+        android:textSize="@dimen/qr_dialog_hash_text_size"
+        android:gravity="center"
+        tools:text="SkkdSldoewuSDljld922ljDLSdsld2023DSloODopumumuDOdosSkkdSldoewuSDljld922ljDLSdsld2023DSloODopumumuDOdos"/>
+
+    <TextView
+        android:id="@+id/copyHashBtnTv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qr_dialog_button_tv_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/qr_dialog_copy_hash_btn_tv_margin_top"
+        android:text="@string/qr_dialog_copy_hash_btn_text"
+        android:textColor="@color/colorBlueAccent"
+        android:textSize="@dimen/qr_dialog_button_text_size"
+        android:textAllCaps="false"
+        style="@style/SecondaryButton"/>
+
+    <TextView
+        android:id="@+id/saveImageBtnTv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qr_dialog_button_tv_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/qr_dialog_save_image_btn_tv_margin_top"
+        android:text="@string/qr_dialog_save_image_btn_text"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/qr_dialog_button_text_size"
+        android:textAllCaps="false"
+        style="@style/SecondaryButton"
+        tools:textColor="@color/colorBlueAccent"/>
+
+</LinearLayout>

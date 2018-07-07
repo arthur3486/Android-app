@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/about_activity_header_vertical_padding"
+    android:paddingBottom="@dimen/about_activity_header_vertical_padding"
+    android:paddingStart="@dimen/about_activity_header_horizontal_padding"
+    android:paddingEnd="@dimen/about_activity_header_horizontal_padding"
+    tools:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/appLogoIv"
+        android:layout_width="@dimen/about_activity_header_app_logo_size"
+        android:layout_height="@dimen/about_activity_header_app_logo_size"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/ic_launcher_large"/>
+
+    <TextView
+        android:id="@+id/appNameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/about_activity_header_margin"
+        android:layout_marginLeft="@dimen/about_activity_header_margin"
+        android:layout_marginStart="@dimen/about_activity_header_margin"
+        android:layout_marginRight="@dimen/about_activity_header_margin"
+        android:layout_marginEnd="@dimen/about_activity_header_margin"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/app_name"
+        style="@style/AboutHeaderAppName"/>
+
+    <TextView
+        android:id="@+id/appVersionTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/about_activity_header_margin"
+        android:layout_marginStart="@dimen/about_activity_header_margin"
+        android:layout_marginRight="@dimen/about_activity_header_margin"
+        android:layout_marginEnd="@dimen/about_activity_header_margin"
+        android:layout_gravity="center_horizontal"
+        tools:text="version 1.0.0"
+        style="@style/AboutHeaderAppVersion"/>
+
+    <View
+        android:id="@+id/separatorView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/about_activity_header_separator_height"
+        android:layout_marginTop="@dimen/about_activity_header_separator_margin_top"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimaryText"/>
+
+    <TextView
+        android:id="@+id/descriptionTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/about_activity_header_margin"
+        android:gravity="center"
+        android:text="@string/about_activity_header_description"
+        style="@style/AboutHeaderAppDescription"/>
+
+</LinearLayout>

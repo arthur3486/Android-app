@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorContentContainer">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:paddingTop="@dimen/recycler_view_padding_top"
+        android:paddingBottom="@dimen/help_activity_recycler_view_padding_bottom"
+        android:paddingLeft="@dimen/recycler_view_horizontal_padding"
+        android:paddingStart="@dimen/recycler_view_horizontal_padding"
+        android:paddingRight="@dimen/recycler_view_horizontal_padding"
+        android:paddingEnd="@dimen/recycler_view_horizontal_padding"
+        android:overScrollMode="never"
+        android:clipToPadding="false"/>
+
+    <include layout="@layout/toolbar_shadow_layout"/>
+
+    <include layout="@layout/toolbar_layout"/>
+
+</RelativeLayout>

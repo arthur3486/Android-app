@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/visitOurWebsiteBtn">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/headerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/about_activity_header_layout"/>
+
+            <LinearLayout
+                android:id="@+id/featuresBarLl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/headerView"
+                android:layout_marginTop="@dimen/about_activity_features_bar_vertical_margin"
+                android:layout_marginBottom="@dimen/about_activity_features_bar_vertical_margin">
+
+                <include
+                    android:id="@+id/cryptoFeatureLl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    layout="@layout/about_activity_feature_layout"/>
+
+                <include
+                    android:id="@+id/auditFeatureLl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    layout="@layout/about_activity_feature_layout"/>
+
+                <include
+                    android:id="@+id/storageFeatureLl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    layout="@layout/about_activity_feature_layout"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/visitOurWebsiteBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/about_activity_website_button_vertical_margin"
+        android:layout_marginBottom="@dimen/about_activity_website_button_vertical_margin"
+        android:text="@string/about_activity_website_button_text"
+        android:textAllCaps="true"
+        tools:drawableStart="@drawable/ic_web"
+        style="@style/PrimaryButton"/>
+
+    <include layout="@layout/toolbar_shadow_layout"/>
+
+    <include layout="@layout/toolbar_layout"/>
+
+</RelativeLayout>

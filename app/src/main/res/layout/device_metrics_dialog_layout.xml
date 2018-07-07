@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <com.stocksexchange.android.ui.views.OptionTextView
+        android:id="@+id/deviceNameOtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:title="Device name:"
+        app:titleColor="@color/colorPrimaryText"
+        app:titleSize="16sp"
+        app:valueColor="@color/colorBlueAccent"
+        app:valueSize="16sp"
+        tools:value="XT1562 (Moto X Play)"/>
+
+    <com.stocksexchange.android.ui.views.OptionTextView
+        android:id="@+id/densityOtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:title="Density:"
+        app:titleColor="@color/colorPrimaryText"
+        app:titleSize="16sp"
+        app:valueColor="@color/colorBlueAccent"
+        app:valueSize="16sp"
+        tools:value="2.0"/>
+
+    <com.stocksexchange.android.ui.views.OptionTextView
+        android:id="@+id/densityInDpOtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:title="Density (DP):"
+        app:titleColor="@color/colorPrimaryText"
+        app:titleSize="16sp"
+        app:valueColor="@color/colorBlueAccent"
+        app:valueSize="16sp"
+        tools:value="320"/>
+
+    <com.stocksexchange.android.ui.views.OptionTextView
+        android:id="@+id/screenWidthInPxOtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:title="Screen width (PX):"
+        app:titleColor="@color/colorPrimaryText"
+        app:titleSize="16sp"
+        app:valueColor="@color/colorBlueAccent"
+        app:valueSize="16sp"
+        tools:value="720"/>
+
+    <com.stocksexchange.android.ui.views.OptionTextView
+        android:id="@+id/screenWidthInDpOtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:title="Screen width (DP):"
+        app:titleColor="@color/colorPrimaryText"
+        app:titleSize="16sp"
+        app:valueColor="@color/colorBlueAccent"
+        app:valueSize="16sp"
+        tools:value="360.0"/>
+
+    <com.stocksexchange.android.ui.views.OptionTextView
+        android:id="@+id/screenHeightInPxOtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:title="Screen height (PX):"
+        app:titleColor="@color/colorPrimaryText"
+        app:titleSize="16sp"
+        app:valueColor="@color/colorBlueAccent"
+        app:valueSize="16sp"
+        tools:value="1184"/>
+
+    <com.stocksexchange.android.ui.views.OptionTextView
+        android:id="@+id/screenHeightInDpOtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:title="Screen height (DP):"
+        app:titleColor="@color/colorPrimaryText"
+        app:titleSize="16sp"
+        app:valueColor="@color/colorBlueAccent"
+        app:valueSize="16sp"
+        tools:value="592.0"/>
+
+    <com.stocksexchange.android.ui.views.OptionTextView
+        android:id="@+id/smallestWidthInDpOtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:title="Smallest width (DP):"
+        app:titleColor="@color/colorPrimaryText"
+        app:titleSize="16sp"
+        app:valueColor="@color/colorBlueAccent"
+        app:valueSize="16sp"
+        tools:value="360"/>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/setting_item_vertical_padding"
+    android:paddingBottom="@dimen/setting_item_vertical_padding"
+    android:paddingLeft="@dimen/setting_item_padding_left"
+    android:paddingStart="@dimen/setting_item_padding_left"
+    android:paddingRight="@dimen/setting_item_padding_right"
+    android:paddingEnd="@dimen/setting_item_padding_right"
+    android:background="?attr/selectableItemBackground"
+    tools:background="@color/colorContentContainer">
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/setting_item_title_text_size"
+        tools:text="Title"/>
+
+    <TextView
+        android:id="@+id/descriptionTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/titleTv"
+        android:layout_marginTop="@dimen/setting_item_description_margin_top"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="@dimen/setting_item_description_text_size"
+        tools:text="Description"/>
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/switchView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBaseline="@id/titleTv"
+        tools:checked="true"/>
+
+</RelativeLayout>

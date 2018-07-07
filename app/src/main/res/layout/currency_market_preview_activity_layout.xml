@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.stocksexchange.android.ui.views.HackyViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabLayout"
+        android:layout_above="@+id/bottomBarCl"
+        android:overScrollMode="never"
+        tools:background="@color/colorContentContainer"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        app:tabMaxWidth="0dp"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabIndicatorColor="@color/colorTabIndicator"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/bottomBarCl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/currency_market_preview_bottom_bar_padding"
+        android:background="@color/colorMarketPreviewBottomBar">
+
+        <Button
+            android:id="@+id/buyBtn"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/currency_market_preview_bottom_bar_button_margin"
+            android:layout_marginEnd="@dimen/currency_market_preview_bottom_bar_button_margin"
+            android:paddingTop="@dimen/currency_market_preview_bottom_bar_button_vertical_padding"
+            android:paddingBottom="@dimen/currency_market_preview_bottom_bar_button_vertical_padding"
+            android:text="@string/action_buy"
+            android:textSize="@dimen/currency_market_preview_bottom_bar_button_text_size"
+            android:stateListAnimator="@null"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/sellBtn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintHorizontal_bias="0.5"
+            style="@style/PrimaryButton"/>
+
+        <Button
+            android:id="@+id/sellBtn"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/currency_market_preview_bottom_bar_button_margin"
+            android:layout_marginStart="@dimen/currency_market_preview_bottom_bar_button_margin"
+            android:paddingTop="@dimen/currency_market_preview_bottom_bar_button_vertical_padding"
+            android:paddingBottom="@dimen/currency_market_preview_bottom_bar_button_vertical_padding"
+            android:text="@string/action_sell"
+            android:textSize="@dimen/currency_market_preview_bottom_bar_button_text_size"
+            android:stateListAnimator="@null"
+            app:layout_constraintLeft_toRightOf="@id/buyBtn"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            style="@style/PrimaryButton"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_drop_shadow_height"
+        android:layout_above="@+id/bottomBarCl"
+        android:background="@drawable/toolbar_reverse_drop_shadow"/>
+
+    <include
+        layout="@layout/toolbar_shadow_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_drop_shadow_height"
+        android:layout_below="@+id/tabLayout"/>
+
+    <include layout="@layout/toolbar_layout"/>
+
+</RelativeLayout>

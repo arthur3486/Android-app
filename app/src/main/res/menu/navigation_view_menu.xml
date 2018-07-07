@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/mainGroup"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/wallets"
+            android:icon="@drawable/ic_wallet"
+            android:title="@string/wallets"/>
+
+        <item
+            android:id="@+id/orders"
+            android:icon="@drawable/ic_swap_vertical"
+            android:title="@string/orders"/>
+
+        <item
+            android:id="@+id/deposits"
+            android:icon="@drawable/ic_deposit"
+            android:title="@string/deposits"/>
+
+        <item
+            android:id="@+id/withdrawals"
+            android:icon="@drawable/ic_withdrawal"
+            android:title="@string/withdrawals"/>
+
+        <item
+            android:id="@+id/tickets"
+            android:icon="@drawable/ic_bookmark"
+            android:title="@string/tickets"/>
+
+    </group>
+
+    <group
+        android:id="@+id/secondaryGroup"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/settings"/>
+
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/ic_information"
+            android:title="@string/about"/>
+
+        <item
+            android:id="@+id/feedback"
+            android:icon="@drawable/ic_announcement"
+            android:title="@string/feedback"/>
+
+        <item
+            android:id="@+id/help"
+            android:icon="@drawable/ic_help"
+            android:title="@string/help"/>
+
+    </group>
+
+</menu>

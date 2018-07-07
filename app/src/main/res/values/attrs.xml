@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="title" format="string"/>
+    <attr name="titleSize" format="dimension"/>
+    <attr name="titleColor" format="color"/>
+
+    <attr name="value" format="string"/>
+    <attr name="valueSize" format="dimension"/>
+    <attr name="valueColor" format="color"/>
+
+    <declare-styleable name="OptionButton">
+
+        <attr name="title"/>
+        <attr name="titleSize"/>
+        <attr name="titleColor"/>
+
+        <attr name="subtitle" format="string"/>
+        <attr name="subtitleSize" format="dimension"/>
+        <attr name="subtitleColor" format="color"/>
+
+        <attr name="borders">
+            <flag name="none" value="0"/>
+            <flag name="left" value="1"/>
+            <flag name="top" value="2"/>
+            <flag name="right" value="4"/>
+            <flag name="bottom" value="8"/>
+            <flag name="all" value="15"/>
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="OptionTextView">
+
+        <attr name="title"/>
+        <attr name="titleSize"/>
+        <attr name="titleColor"/>
+
+        <attr name="value"/>
+        <attr name="valueSize"/>
+        <attr name="valueColor"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="OptionEditText">
+
+        <attr name="title"/>
+        <attr name="titleSize"/>
+        <attr name="titleColor"/>
+
+        <attr name="inputText" format="string"/>
+        <attr name="inputHint" format="string"/>
+        <attr name="inputSize" format="dimension"/>
+        <attr name="inputTextColor" format="color"/>
+        <attr name="inputHintColor" format="color"/>
+
+        <attr name="label" format="string"/>
+        <attr name="labelSize" format="dimension"/>
+        <attr name="labelColor" format="color"/>
+
+        <attr name="error" format="string"/>
+        <attr name="errorSize" format="dimension"/>
+        <attr name="errorColor" format="color"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="DottedOptionTextView">
+
+        <attr name="title"/>
+        <attr name="titleSize"/>
+        <attr name="titleColor"/>
+
+        <attr name="value"/>
+        <attr name="valueSize"/>
+        <attr name="valueColor"/>
+
+        <attr name="separatorColor" format="color"/>
+
+    </declare-styleable>
+
+</resources>

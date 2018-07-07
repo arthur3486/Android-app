@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:parentTag="android.widget.RelativeLayout"
+    tools:background="@color/colorCardView">
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:text="Title"
+        tools:textSize="16sp"
+        tools:textColor="@color/colorPrimaryText"
+        style="@style/SingleLineTextView"/>
+
+    <ImageView
+        android:id="@+id/separatorIv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dotted_line_separator_height"
+        android:layout_toRightOf="@id/titleTv"
+        android:layout_toEndOf="@id/titleTv"
+        android:layout_toLeftOf="@+id/valueTv"
+        android:layout_toStartOf="@+id/valueTv"
+        android:layout_alignBaseline="@id/titleTv"
+        android:layout_marginLeft="@dimen/dotted_option_text_view_separator_horizontal_margin"
+        android:layout_marginStart="@dimen/dotted_option_text_view_separator_horizontal_margin"
+        android:layout_marginRight="@dimen/dotted_option_text_view_separator_horizontal_margin"
+        android:layout_marginEnd="@dimen/dotted_option_text_view_separator_horizontal_margin"
+        android:baselineAlignBottom="true"
+        android:layerType="software"
+        android:src="@drawable/dotted_line_drawable"/>
+
+    <TextView
+        android:id="@+id/valueTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        tools:text="Value"
+        tools:textSize="16sp"
+        tools:textColor="@color/colorPrimaryText"
+        style="@style/SingleLineTextView"/>
+
+</merge>

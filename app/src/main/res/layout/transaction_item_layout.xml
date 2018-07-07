@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/card_view_horizontal_margin"
+    android:layout_marginStart="@dimen/card_view_horizontal_margin"
+    android:layout_marginRight="@dimen/card_view_horizontal_margin"
+    android:layout_marginEnd="@dimen/card_view_horizontal_margin"
+    android:layout_marginBottom="@dimen/card_view_margin_bottom"
+    app:cardCornerRadius="@dimen/card_view_corner_radius"
+    app:cardElevation="@dimen/card_view_elevation"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/colorCardView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/transaction_item_padding"
+        android:orientation="vertical"
+        android:foreground="?attr/selectableItemBackground">
+
+        <FrameLayout
+            android:id="@+id/topBarFl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/transaction_item_top_bar_margin_bottom">
+
+            <TextView
+                android:id="@+id/statusTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                tools:text="Finished"
+                tools:textColor="@color/colorGreenAccent"
+                style="@style/SecondaryButton"/>
+
+            <TextView
+                android:id="@+id/currencyTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:textSize="@dimen/transaction_item_currency_tv_text_size"
+                android:textColor="@color/colorDottedOptionTitle"
+                tools:text="NXT"/>
+
+        </FrameLayout>
+
+        <com.stocksexchange.android.ui.views.DottedOptionTextView
+            android:id="@+id/amountDotv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/transaction_item_dotv_margin_bottom"
+            app:title="@string/amount"
+            app:titleSize="@dimen/transaction_item_dotv_text_size"
+            app:titleColor="@color/colorDottedOptionText"
+            app:valueSize="@dimen/transaction_item_dotv_text_size"
+            app:valueColor="@color/colorDottedOptionText"
+            app:separatorColor="@color/colorDottedOptionText"
+            tools:value="11.92748712"/>
+
+        <com.stocksexchange.android.ui.views.DottedOptionTextView
+            android:id="@+id/feeDotv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/transaction_item_dotv_margin_bottom"
+            app:title="@string/fee"
+            app:titleSize="@dimen/transaction_item_dotv_text_size"
+            app:titleColor="@color/colorDottedOptionText"
+            app:valueSize="@dimen/transaction_item_dotv_text_size"
+            app:valueColor="@color/colorDottedOptionText"
+            app:separatorColor="@color/colorDottedOptionText"
+            tools:value="0.28469081"/>
+
+        <com.stocksexchange.android.ui.views.DottedOptionTextView
+            android:id="@+id/addressDotv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/transaction_item_dotv_margin_bottom"
+            app:title="@string/address"
+            app:titleSize="@dimen/transaction_item_dotv_text_size"
+            app:titleColor="@color/colorDottedOptionText"
+            app:valueSize="@dimen/transaction_item_dotv_text_size"
+            app:separatorColor="@color/colorDottedOptionText"
+            tools:value="Xun3ZzBxgBg1Kp…"
+            tools:valueColor="@color/colorYellowAccent"/>
+
+        <com.stocksexchange.android.ui.views.DottedOptionTextView
+            android:id="@+id/transactionIdDotv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/transaction_item_dotv_margin_bottom"
+            app:title="@string/transaction_id"
+            app:titleSize="@dimen/transaction_item_dotv_text_size"
+            app:titleColor="@color/colorDottedOptionText"
+            app:valueSize="@dimen/transaction_item_dotv_text_size"
+            app:separatorColor="@color/colorDottedOptionText"
+            tools:value="fc9e6efc6a8f1d9…"
+            tools:valueColor="@color/colorYellowAccent"/>
+
+        <com.stocksexchange.android.ui.views.DottedOptionTextView
+            android:id="@+id/dateDotv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/date"
+            app:titleSize="@dimen/transaction_item_dotv_text_size"
+            app:titleColor="@color/colorDottedOptionText"
+            app:valueSize="@dimen/transaction_item_dotv_text_size"
+            app:valueColor="@color/colorDottedOptionText"
+            app:separatorColor="@color/colorDottedOptionText"
+            tools:value="2018-04-18 07:09:17 PM"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

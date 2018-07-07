@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General -->
+<!--    <dimen name="recycler_view_horizontal_padding">100dp</dimen>
+
+    &lt;!&ndash; Dashboard &ndash;&gt;
+    <dimen name="currency_markets_sort_panel_horizontal_padding">115dp</dimen>-->
+
+    <!-- CurrencyMarketPreview -->
+    <dimen name="currency_market_preview_fragment_info_view_padding_top">10dp</dimen>
+    <dimen name="currency_market_preview_fragment_info_view_padding_bottom">15dp</dimen>
+
+    <!-- ChartFragment -->
+    <dimen name="chart_fragment_chart_left_offset">8px</dimen> <!-- Has to be in PX due to MPAndroidChart -->
+    <dimen name="chart_fragment_chart_bottom_offset">15px</dimen> <!-- Has to be in PX due to MPAndroidChart -->
+
+    <!-- TicketsFragment -->
+    <dimen name="tickets_fragment_recycler_view_padding_bottom">@dimen/recycler_view_padding_bottom</dimen>
+
+    <!-- SettingsActivity -->
+    <dimen name="settings_activity_recycler_view_horizontal_padding">70dp</dimen>
+
+</resources>

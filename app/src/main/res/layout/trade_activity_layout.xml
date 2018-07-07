@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:id="@+id/userBalanceTitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/trade_activity_user_balance_margin_top"
+        android:layout_marginLeft="@dimen/trade_activity_horizontal_margin"
+        android:layout_marginStart="@dimen/trade_activity_horizontal_margin"
+        android:layout_marginRight="@dimen/trade_activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/trade_activity_horizontal_margin"
+        android:text="@string/your_balance"
+        style="@style/TradeUserBalancesTitle"/>
+
+    <LinearLayout
+        android:id="@+id/userBalanceContainerLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userBalanceTitleTv"
+        android:layout_marginTop="@dimen/trade_activity_user_balance_container_margin_top"
+        android:layout_marginLeft="@dimen/trade_activity_horizontal_margin"
+        android:layout_marginStart="@dimen/trade_activity_horizontal_margin"
+        android:layout_marginRight="@dimen/trade_activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/trade_activity_horizontal_margin"
+        android:orientation="horizontal">
+
+        <com.stocksexchange.android.ui.views.OptionButton
+            android:id="@+id/userCurrencyOb"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/trade_activity_option_button_vertical_padding"
+            android:paddingBottom="@dimen/trade_activity_option_button_vertical_padding"
+            app:borders="all"
+            app:titleColor="@color/colorOptionButtonText"
+            app:titleSize="@dimen/trade_activity_option_button_text_size"
+            app:subtitleColor="@color/colorOptionButtonText"
+            app:subtitleSize="@dimen/trade_activity_option_button_text_size"
+            tools:title="Bitcapitalcoin"
+            tools:subtitle="0.00"/>
+
+        <com.stocksexchange.android.ui.views.OptionButton
+            android:id="@+id/userMarketOb"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/trade_activity_option_button_vertical_padding"
+            android:paddingBottom="@dimen/trade_activity_option_button_vertical_padding"
+            app:borders="all"
+            app:titleColor="@color/colorOptionButtonText"
+            app:titleSize="@dimen/trade_activity_option_button_text_size"
+            app:subtitleColor="@color/colorOptionButtonText"
+            app:subtitleSize="@dimen/trade_activity_option_button_text_size"
+            tools:title="Bitcoin"
+            tools:subtitle="0.00"/>
+
+    </LinearLayout>
+
+    <com.stocksexchange.android.ui.views.OptionEditText
+        android:id="@+id/amountOet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userBalanceContainerLl"
+        android:layout_marginTop="@dimen/trade_activity_amount_oet_margin_top"
+        android:layout_marginLeft="@dimen/trade_activity_horizontal_margin"
+        android:layout_marginStart="@dimen/trade_activity_horizontal_margin"
+        android:layout_marginRight="@dimen/trade_activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/trade_activity_horizontal_margin"
+        app:title="@string/amount"
+        app:titleColor="@color/colorSecondaryText"
+        app:titleSize="@dimen/trade_activity_input_text_size"
+        app:inputSize="@dimen/trade_activity_input_text_size"
+        app:inputTextColor="@color/colorPrimaryText"
+        app:inputHintColor="@color/colorOptionEditTextInputHint"
+        app:labelSize="@dimen/trade_activity_input_text_size"
+        app:labelColor="@color/colorPrimaryText"
+        app:errorSize="@dimen/trade_activity_input_error_text_size"
+        app:errorColor="@color/colorRedAccent"
+        tools:inputHint="Minimum: 0.00000010"
+        tools:label="XBCN"
+        tools:error="The amount should be at least 0.00000010"/>
+
+    <com.stocksexchange.android.ui.views.OptionEditText
+        android:id="@+id/atPriceOet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/amountOet"
+        android:layout_marginTop="@dimen/trade_activity_at_price_oet_margin_top"
+        android:layout_marginLeft="@dimen/trade_activity_horizontal_margin"
+        android:layout_marginStart="@dimen/trade_activity_horizontal_margin"
+        android:layout_marginRight="@dimen/trade_activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/trade_activity_horizontal_margin"
+        app:title="@string/at_price"
+        app:titleColor="@color/colorSecondaryText"
+        app:titleSize="@dimen/trade_activity_input_text_size"
+        app:inputSize="@dimen/trade_activity_input_text_size"
+        app:inputTextColor="@color/colorPrimaryText"
+        app:inputHintColor="@color/colorOptionEditTextInputHint"
+        app:labelSize="@dimen/trade_activity_input_text_size"
+        app:labelColor="@color/colorPrimaryText"
+        app:errorSize="@dimen/trade_activity_input_error_text_size"
+        app:errorColor="@color/colorRedAccent"
+        tools:inputHint="Ask: 0.00002342"
+        tools:label="BTC"
+        tools:error="The price should be positive"/>
+
+    <LinearLayout
+        android:id="@+id/detailsContainerLl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/atPriceOet"
+        android:layout_above="@+id/tradeBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/trade_activity_details_container_vertical_margin"
+        android:layout_marginBottom="@dimen/trade_activity_details_container_vertical_margin"
+        android:layout_marginLeft="@dimen/trade_activity_horizontal_margin"
+        android:layout_marginStart="@dimen/trade_activity_horizontal_margin"
+        android:layout_marginRight="@dimen/trade_activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/trade_activity_horizontal_margin"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <com.stocksexchange.android.ui.views.OptionTextView
+            android:id="@+id/feeOtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:title="@string/trade_activity_fee_title_text"
+            app:titleColor="@color/colorPrimaryText"
+            app:titleSize="@dimen/trade_activity_details_container_option_tv_text_size"
+            app:valueColor="@color/colorBlueAccent"
+            app:valueSize="@dimen/trade_activity_details_container_option_tv_text_size"
+            tools:value="0 XBCN (0.2%)"/>
+
+        <com.stocksexchange.android.ui.views.OptionTextView
+            android:id="@+id/userDeductionOtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/trade_activity_details_container_option_tv_user_deduction_margin_top"
+            app:title="@string/trade_activity_user_deduction_title_text"
+            app:titleColor="@color/colorPrimaryText"
+            app:titleSize="@dimen/trade_activity_details_container_option_tv_text_size"
+            app:valueColor="@color/colorRedAccent"
+            app:valueSize="@dimen/trade_activity_details_container_option_tv_text_size"
+            tools:value="0.22379239 BTC"/>
+
+        <com.stocksexchange.android.ui.views.OptionTextView
+            android:id="@+id/userAdditionOtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/trade_activity_details_container_option_tv_margin_top"
+            app:title="@string/trade_activity_user_addition_title_text"
+            app:titleColor="@color/colorPrimaryText"
+            app:titleSize="@dimen/trade_activity_details_container_option_tv_text_size"
+            app:valueColor="@color/colorGreenAccent"
+            app:valueSize="@dimen/trade_activity_details_container_option_tv_text_size"
+            tools:value="192.22379239 XBCN"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/tradeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/trade_activity_button_margin"
+        android:layout_marginStart="@dimen/trade_activity_button_margin"
+        android:layout_marginRight="@dimen/trade_activity_button_margin"
+        android:layout_marginEnd="@dimen/trade_activity_button_margin"
+        android:layout_marginBottom="@dimen/trade_activity_button_margin"
+        android:textSize="@dimen/currency_market_preview_bottom_bar_button_text_size"
+        android:stateListAnimator="@null"
+        tools:text="Buy XBCN For BTC"
+        tools:backgroundTint="@color/colorGreenAccent"
+        style="@style/PrimaryButton"/>
+
+    <include layout="@layout/toolbar_shadow_layout"/>
+
+    <include layout="@layout/toolbar_layout"/>
+
+</RelativeLayout>

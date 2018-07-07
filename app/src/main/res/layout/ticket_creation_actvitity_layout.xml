@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorContentContainer">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="@dimen/card_view_corner_radius"
+        app:cardElevation="@dimen/card_view_elevation"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@color/colorCardView">
+
+        <com.stocksexchange.android.ui.views.InterceptableScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/cardViewTopBarRl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingStart="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingEnd="15dp">
+
+                    <EditText
+                        android:id="@+id/subjectEt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_toLeftOf="@+id/categoryBtnTv"
+                        android:layout_toStartOf="@+id/categoryBtnTv"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@null"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textStyle="bold"
+                        android:hint="@string/ticket_creation_subject_et_hint"
+                        android:textColorHint="@color/colorSecondaryText"
+                        android:inputType="textCapSentences"
+                        android:imeOptions="flagNoExtractUi"
+                        style="@style/SingleLineTextView"
+                        tools:textCursorDrawable="@drawable/edit_text_cursor_drawable"/>
+
+                    <TextView
+                        android:id="@+id/categoryBtnTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/category"
+                        android:textColor="@color/colorYellowAccent"
+                        style="@style/SecondaryButton"/>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/separatorIv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dotted_line_separator_height"
+                    android:layerType="software"
+                    tools:src="@drawable/dotted_line_drawable"/>
+
+                <EditText
+                    android:id="@+id/messageEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:background="@null"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorSecondaryText"
+                    android:hint="@string/ticket_creation_message_et_hint"
+                    android:textColorHint="@color/colorSecondaryText"
+                    android:lineSpacingExtra="2dp"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:imeOptions="flagNoExtractUi"
+                    tools:textCursorDrawable="@drawable/edit_text_cursor_drawable"/>
+
+            </LinearLayout>
+
+        </com.stocksexchange.android.ui.views.InterceptableScrollView>
+
+    </android.support.v7.widget.CardView>
+
+    <include layout="@layout/toolbar_shadow_layout"/>
+
+    <include layout="@layout/toolbar_layout"/>
+
+</RelativeLayout>

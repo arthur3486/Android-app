@@ -1,0 +1,64 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.gradle_version = '3.1.2'
+    ext.kotlin_version = '1.2.21'
+    ext.dokka_version = '0.9.15'
+    ext.google_services_version = '3.3.1'
+    ext.fabric_version = '1.25.1'
+
+    repositories {
+        google()
+        jcenter()
+        maven {
+            url 'https://maven.fabric.io/public'
+        }
+
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.3'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.dokka:dokka-android-gradle-plugin:$dokka_version"
+        classpath "com.google.gms:google-services:$google_services_version"
+        classpath "io.fabric.tools:gradle:$fabric_version"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    coroutine_version = "0.22.5"
+    anko_version = "0.10.4"
+    koin_version = '0.9.1'
+    constraint_version = "1.1.0"
+    support_version = "27.1.1"
+    multi_dex_version = "1.0.3"
+    play_services_vision_version = "15.0.2"
+    play_services_auth_version = "15.0.1"
+    firebase_core_version = "16.0.0"
+    retrofit_version = "2.4.0"
+    logging_interceptor_version = "3.10.0"
+    crashlytics_version = "2.9.3"
+    retrofit_coroutines_version = "0.9.0"
+    event_bus_version = "3.1.1"
+    mp_android_chart_version = "v3.0.3"
+    qr_gen_version = "2.4.0"
+    timber_version = "4.7.0"
+    expandable_layout_version = "2.9.2"
+    material_dialogs_version = "0.9.6.0"
+    room_version = "1.1.0"
+}

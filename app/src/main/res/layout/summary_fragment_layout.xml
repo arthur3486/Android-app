@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorContentContainerLight">
+
+    <com.stocksexchange.android.ui.views.InfoView
+        android:id="@+id/infoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        tools:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/progress_bar_size"
+        android:layout_height="@dimen/progress_bar_size"
+        android:layout_gravity="center"
+        tools:visibility="gone"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/summaryContainerLl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.stocksexchange.android.ui.views.OptionButton
+                android:id="@+id/statusOb"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                app:borders="bottom"
+                app:title="@string/status"
+                app:titleColor="@color/colorOptionButtonText"
+                app:titleSize="@dimen/summary_fragment_option_button_text_size"
+                app:subtitleSize="@dimen/summary_fragment_option_button_text_size"
+                tools:subtitle="Active"
+                tools:subtitleColor="@color/colorGreenAccent"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:orientation="horizontal">
+
+                <com.stocksexchange.android.ui.views.OptionButton
+                    android:id="@+id/currencyOb"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    app:borders="top|right|bottom"
+                    app:title="@string/currency"
+                    app:titleColor="@color/colorOptionButtonText"
+                    app:titleSize="@dimen/summary_fragment_option_button_text_size"
+                    app:subtitleSize="@dimen/summary_fragment_option_button_text_size"
+                    app:subtitleColor="@color/colorAccent"
+                    tools:subtitle="JesusCoin"/>
+
+                <com.stocksexchange.android.ui.views.OptionButton
+                    android:id="@+id/lastPriceOb"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    app:borders="top|left|bottom"
+                    app:title="@string/last_price"
+                    app:titleColor="@color/colorOptionButtonText"
+                    app:titleSize="@dimen/summary_fragment_option_button_text_size"
+                    app:subtitleSize="@dimen/summary_fragment_option_button_text_size"
+                    app:subtitleColor="@color/colorPurpleAccent"
+                    tools:subtitle="0.00000003 BTC"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:orientation="horizontal">
+
+                <com.stocksexchange.android.ui.views.OptionButton
+                    android:id="@+id/dailyMaxBuyOb"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    app:borders="top|right|bottom"
+                    app:title="@string/daily_max_buy"
+                    app:titleColor="@color/colorOptionButtonText"
+                    app:titleSize="@dimen/summary_fragment_option_button_text_size"
+                    app:subtitleSize="@dimen/summary_fragment_option_button_text_size"
+                    app:subtitleColor="@color/colorYellowAccent"
+                    tools:subtitle="0.00000011 BTC"/>
+
+                <com.stocksexchange.android.ui.views.OptionButton
+                    android:id="@+id/dailyMinSellOb"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    app:borders="top|left|bottom"
+                    app:title="@string/daily_min_sell"
+                    app:titleColor="@color/colorOptionButtonText"
+                    app:titleSize="@dimen/summary_fragment_option_button_text_size"
+                    app:subtitleSize="@dimen/summary_fragment_option_button_text_size"
+                    app:subtitleColor="@color/colorYellowAccent"
+                    tools:subtitle="0.00000002 BTC"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:orientation="horizontal">
+
+                <com.stocksexchange.android.ui.views.OptionButton
+                    android:id="@+id/dailyChangeOb"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    app:borders="top|right|bottom"
+                    app:title="@string/daily_change"
+                    app:titleColor="@color/colorOptionButtonText"
+                    app:titleSize="@dimen/summary_fragment_option_button_text_size"
+                    app:subtitleSize="@dimen/summary_fragment_option_button_text_size"
+                    tools:subtitle="-33.3333 %"
+                    tools:subtitleColor="@color/colorRedAccent"/>
+
+                <com.stocksexchange.android.ui.views.OptionButton
+                    android:id="@+id/dailyVolumeOb"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    app:borders="top|left|bottom"
+                    app:title="@string/daily_volume"
+                    app:titleColor="@color/colorOptionButtonText"
+                    app:titleSize="@dimen/summary_fragment_option_button_text_size"
+                    app:subtitleSize="@dimen/summary_fragment_option_button_text_size"
+                    app:subtitleColor="@color/colorTealAccent"
+                    tools:subtitle="3784.981900 JC"/>
+
+            </LinearLayout>
+
+            <com.stocksexchange.android.ui.views.OptionButton
+                android:id="@+id/minOrderAmountOb"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                app:borders="top|bottom"
+                app:title="@string/min_order_amount"
+                app:titleColor="@color/colorOptionButtonText"
+                app:titleSize="@dimen/summary_fragment_option_button_text_size"
+                app:subtitleSize="@dimen/summary_fragment_option_button_text_size"
+                app:subtitleColor="@color/colorLightGreenAccent"
+                tools:subtitle="0.00000010 BTC"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:orientation="horizontal">
+
+                <com.stocksexchange.android.ui.views.OptionButton
+                    android:id="@+id/buyFeeOb"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    app:borders="top|right"
+                    app:title="@string/buy_fee_percent"
+                    app:titleColor="@color/colorOptionButtonText"
+                    app:titleSize="@dimen/summary_fragment_option_button_text_size"
+                    app:subtitleSize="@dimen/summary_fragment_option_button_text_size"
+                    app:subtitleColor="@color/colorOrangeAccent"
+                    tools:subtitle="0.2 %"/>
+
+                <com.stocksexchange.android.ui.views.OptionButton
+                    android:id="@+id/sellFeeOb"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    app:borders="top|left"
+                    app:title="@string/sell_fee_percent"
+                    app:titleColor="@color/colorOptionButtonText"
+                    app:titleSize="@dimen/summary_fragment_option_button_text_size"
+                    app:subtitleSize="@dimen/summary_fragment_option_button_text_size"
+                    app:subtitleColor="@color/colorOrangeAccent"
+                    tools:subtitle="0.2 %"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</FrameLayout>

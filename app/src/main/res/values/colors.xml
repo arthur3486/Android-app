@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General -->
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="colorRedAccent">#cc2e4e</color>
+    <color name="colorRedAccentDark">#a0233c</color>
+    <color name="colorGreenAccent">#00be75</color>
+    <color name="colorGreenAccentDark">#00a35d</color>
+    <color name="colorLightGreenAccent">#8BC34A</color>
+    <color name="colorLightGreenAccentDark">#7CB342</color>
+    <color name="colorTealAccent">#009688</color>
+    <color name="colorTealAccentDark">#00897B</color>
+    <color name="colorBlueAccent">#329ED5</color>
+    <color name="colorBlueAccentDark">#2f84af</color>
+    <color name="colorYellowAccent">#ddc040</color>
+    <color name="colorYellowAccentDark">#FCBD0D</color>
+    <color name="colorOrangeAccent">#f2992c</color>
+    <color name="colorOrangeAccentDark">#e08b23</color>
+    <color name="colorPurpleAccent">#a77dc2</color>
+    <color name="colorPurpleAccentDark">#966eaf</color>
+
+    <!-- Green -->
+
+    <color name="colorPrimary">#002e3c</color>
+    <color name="colorPrimaryLight">#063a4c</color>
+    <color name="colorPrimaryDark">#00222d</color>
+    <color name="colorPrimaryText">@color/white</color>
+    <color name="colorPrimaryTextDark">#cad2d6</color>
+    <color name="colorSecondaryText">#809aaf</color>
+    <color name="colorSecondaryTextDark">#5d7182</color>
+    <color name="colorAccent">#61a9e1</color>
+    <color name="colorAccentDark">#579cd1</color>
+
+    <color name="colorContentContainer">#001d26</color>
+    <color name="colorContentContainerLight">@color/colorPrimaryDark</color>
+    <color name="colorTabIndicator">@color/colorPrimaryText</color>
+    <color name="colorDrawerArrow">@color/colorPrimaryText</color>
+    <color name="colorDivider">#cdd1d6</color>
+    <color name="colorQrCodeBorder">#747474</color>
+    <color name="colorQrCodeScannerTint">#77747474</color>
+    <color name="colorToolbarDropShadow">#51000000</color>
+    <color name="colorMarketsSortPanel">#1b4f5d</color>
+    <color name="colorCardView">#002733</color>
+    <color name="colorInfoView">@color/colorSecondaryText</color>
+    <color name="colorProgressBar">@color/colorAccent</color>
+    <color name="colorFeedbackFooterButton">@color/colorAccent</color>
+    <color name="colorChartTextColor">@color/colorPrimaryTextDark</color>
+    <color name="colorChartShadowColor">@color/white</color>
+    <color name="colorChartAxisGridLineColor">#FF888888</color>
+    <color name="colorLinkNormalBackground">#ddc040</color>
+    <color name="colorLinkSelectedBackground">#30ddc040</color>
+    <color name="colorDottedOptionTitle">@color/colorPrimaryTextDark</color>
+    <color name="colorDottedOptionText">#809aaf</color>
+    <color name="colorPrimaryButtonReleased">@color/colorPrimary</color>
+    <color name="colorPrimaryButtonPressed">#002633</color>
+    <color name="colorPrimaryGradientStart">@color/colorPrimary</color>
+    <color name="colorPrimaryGradientEnd">@color/colorPrimaryLight</color>
+    <color name="colorOptionButtonText">@color/colorPrimaryText</color>
+    <color name="colorOptionEditTextInput">@color/colorPrimaryLight</color>
+    <color name="colorOptionEditTextInputHint">#657786</color>
+    <color name="colorMarketPreviewBottomBar">@color/colorPrimaryLight</color>
+    <color name="colorNavigationViewBackground">@color/white</color>
+    <color name="colorNavigationViewItem">#32445C</color>
+    <color name="colorQrDialogBackground">@color/white</color>
+    <color name="colorQrDialogText">#32445C</color>
+    <color name="colorMarketsSortPanelSelected">@color/colorPrimaryText</color>
+    <color name="colorMarketsSortPanelUnselected">@color/colorPrimaryTextDark</color>
+    <color name="colorChartRadioButton">@color/colorSecondaryText</color>
+    <color name="colorSettingsBackground">#002733</color>
+
+    <!-- Night blue -->
+
+    <!--<color name="colorPrimary">#222e3c</color>
+    <color name="colorPrimaryLight">#2b3a4c</color>
+    <color name="colorPrimaryDark">#19222d</color>
+    <color name="colorPrimaryText">@color/white</color>
+    <color name="colorPrimaryTextDark">#cad2d6</color>
+    <color name="colorSecondaryText">#809aaf</color>
+    <color name="colorSecondaryTextDark">#5d7182</color>
+    <color name="colorAccent">#61a9e1</color>
+    <color name="colorAccentDark">#579cd1</color>
+
+    <color name="colorContentContainer">#151d26</color>
+    <color name="colorContentContainerLight">@color/colorPrimaryDark</color>
+    <color name="colorTabIndicator">@color/colorPrimaryText</color>
+    <color name="colorDrawerArrow">@color/colorPrimaryText</color>
+    <color name="colorDivider">#cdd1d6</color>
+    <color name="colorQrCodeBorder">#747474</color>
+    <color name="colorQrCodeScannerTint">#77747474</color>
+    <color name="colorToolbarDropShadow">#51000000</color>
+    <color name="colorMarketsSortPanel">#3a516d</color>
+    <color name="colorCardView">#1c2733</color>
+    <color name="colorInfoView">@color/colorSecondaryText</color>
+    <color name="colorProgressBar">@color/colorAccent</color>
+    <color name="colorFeedbackFooterButton">@color/colorAccent</color>
+    <color name="colorChartTextColor">@color/colorPrimaryTextDark</color>
+    <color name="colorChartShadowColor">@color/white</color>
+    <color name="colorChartAxisGridLineColor">#FF888888</color>
+    <color name="colorLinkNormalBackground">#ddc040</color>
+    <color name="colorLinkSelectedBackground">#30ddc040</color>
+    <color name="colorDottedOptionTitle">@color/colorPrimaryTextDark</color>
+    <color name="colorDottedOptionText">#809aaf</color>
+    <color name="colorPrimaryButtonReleased">@color/colorPrimary</color>
+    <color name="colorPrimaryButtonPressed">#283442</color>
+    <color name="colorPrimaryGradientStart">@color/colorPrimary</color>
+    <color name="colorPrimaryGradientEnd">@color/colorPrimaryLight</color>
+    <color name="colorOptionButtonText">@color/colorPrimaryText</color>
+    <color name="colorOptionEditTextInput">@color/colorPrimaryLight</color>
+    <color name="colorOptionEditTextInputHint">#657786</color>
+    <color name="colorMarketPreviewBottomBar">@color/colorPrimaryLight</color>
+    <color name="colorNavigationViewBackground">@color/white</color>
+    <color name="colorNavigationViewItem">#32445C</color>
+    <color name="colorQrDialogBackground">@color/white</color>
+    <color name="colorQrDialogText">#32445C</color>
+    <color name="colorMarketsSortPanelSelected">@color/colorPrimaryText</color>
+    <color name="colorMarketsSortPanelUnselected">@color/colorPrimaryTextDark</color>
+    <color name="colorChartRadioButton">@color/colorSecondaryText</color>
+    <color name="colorSettingsBackground">@color/colorContentContainerLight</color>-->
+
+    <!-- Old -->
+
+<!--    <color name="colorPrimary">#2b3675</color>
+    <color name="colorPrimaryLight">#2b4884</color>
+    <color name="colorPrimaryDarker">#273270</color>
+    <color name="colorPrimaryDark">#1d2556</color>
+    <color name="colorPrimaryTextWhite">@color/white</color>
+    <color name="colorPrimaryTextWhiteDark">#c9cfd6</color>
+    <color name="colorPrimaryTextGray">#657786</color>
+    <color name="colorPrimaryTextBlue">#32445C</color>
+    <color name="colorAccent">#505da8</color>
+    <color name="colorAccentDark">#424e91</color>
+
+    <color name="colorContentContainer">#eeeeee</color>
+    <color name="colorTabIndicator">@color/white</color>
+    <color name="colorDrawerArrow">@color/white</color>
+    <color name="colorDivider">#cdd1d6</color>
+    <color name="colorQrCodeBorder">#747474</color>
+    <color name="colorQrCodeScannerTint">#77747474</color>
+    <color name="colorToolbarDropShadow">#51000000</color>
+    <color name="colorCardView">@color/white</color>
+    <color name="colorCardViewPrimaryText">@color/colorPrimaryTextBlue</color>
+    <color name="colorCardViewSecondaryText">@color/colorPrimaryTextGray</color>
+    <color name="colorInfoView">@color/colorPrimaryTextBlue</color>
+    <color name="colorProgressBar">@color/colorAccent</color>
+    <color name="colorFeedbackFooter">@color/colorCardView</color>
+    <color name="colorFeedbackFooterButton">@color/colorAccent</color>-->
+
+</resources>

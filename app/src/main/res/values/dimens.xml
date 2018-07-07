@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General -->
+    <dimen name="title_text_size">20sp</dimen>
+    <dimen name="toolbar_drop_shadow_height">4dp</dimen>
+    <dimen name="toolbar_progress_bar_padding">12dp</dimen>
+    <dimen name="progress_bar_size">48dp</dimen>
+    <dimen name="fragment_progress_bar_margin_top">150dp</dimen>
+    <dimen name="caret_width">1dp</dimen>
+    <dimen name="dashboard_coordinator_layout_margin_left">0dp</dimen>
+
+    <dimen name="card_view_horizontal_margin">2dp</dimen>
+    <dimen name="card_view_margin_bottom">-4dp</dimen>
+    <dimen name="card_view_elevation">2dp</dimen>
+    <dimen name="card_view_corner_radius">8dp</dimen>
+
+    <dimen name="recycler_view_padding_top">4dp</dimen>
+    <dimen name="recycler_view_padding_bottom">4dp</dimen>
+    <dimen name="recycler_view_horizontal_padding">2dp</dimen>
+    <dimen name="recycler_view_divider_size">2dp</dimen>
+
+    <!-- Dotted line separator -->
+    <dimen name="dotted_line_separator_height">2dp</dimen>
+    <dimen name="dotted_line_separator_dash_width">4dp</dimen>
+    <dimen name="dotted_line_separator_dash_gap">4dp</dimen>
+    <dimen name="dotted_line_separator_stroke_width">1dp</dimen>
+
+    <!-- Login -->
+    <dimen name="login_app_logo_size">100dp</dimen>
+    <dimen name="login_app_logo_margin_top">25dp</dimen>
+
+    <dimen name="login_title_margin_top">5dp</dimen>
+    <dimen name="login_title_horizontal_margin">25dp</dimen>
+    <dimen name="login_title_text_size">28sp</dimen>
+
+    <dimen name="login_motto_top_margin">5dp</dimen>
+    <dimen name="login_motto_horizontal_margin">25dp</dimen>
+    <dimen name="login_motto_text_size">16sp</dimen>
+
+    <dimen name="login_qr_code_scanner_vertical_margin">25dp</dimen>
+    <dimen name="login_qr_code_scanner_horizontal_margin">30dp</dimen>
+
+    <dimen name="qr_code_scanner_border_line_size_small">4dp</dimen>
+    <dimen name="qr_code_scanner_border_line_size_large">32dp</dimen>
+    <dimen name="qr_code_scanner_border_margin">8dp</dimen>
+
+    <dimen name="login_hint_horizontal_margin">25dp</dimen>
+    <dimen name="login_hint_bottom_margin">25dp</dimen>
+    <dimen name="login_hint_text_size">14sp</dimen>
+
+    <!-- CustomTab -->
+    <dimen name="custom_tab_text_size">16sp</dimen>
+
+    <!-- Dashboard -->
+    <dimen name="dashboard_app_bar_elevation">6dp</dimen>
+
+    <!-- CurrencyMarketsSortPanel -->
+    <dimen name="currency_markets_sort_panel_vertical_padding">8dp</dimen>
+    <dimen name="currency_markets_sort_panel_horizontal_padding">18dp</dimen>
+    <dimen name="currency_markets_sort_panel_separator_horizontal_padding">5dp</dimen>
+    <dimen name="currency_markets_sort_panel_title_size">14sp</dimen>
+
+    <!-- Navigation View -->
+    <dimen name="navigation_view_width">300dp</dimen>
+
+    <dimen name="navigation_view_header_height">170dp</dimen>
+    <dimen name="navigation_view_header_margin">16dp</dimen>
+    <dimen name="navigation_view_header_profile_picture_size">75dp</dimen>
+    <dimen name="navigation_view_header_profile_picture_margin_bottom">10dp</dimen>
+    <dimen name="navigation_view_header_profile_picture_padding">2dp</dimen>
+    <dimen name="navigation_view_header_profile_picture_mark_size">38sp</dimen>
+    <dimen name="navigation_view_header_profile_picture_elevation">8dp</dimen>
+    <dimen name="navigation_view_header_captions_horizontal_padding">30dp</dimen>
+    <dimen name="navigation_view_header_text_size">14sp</dimen>
+
+    <dimen name="navigation_view_item_text_size">18sp</dimen>
+
+    <!-- Primary button -->
+    <dimen name="primary_button_height">40dp</dimen>
+    <dimen name="primary_button_horizontal_padding">15dp</dimen>
+    <dimen name="primary_button_drawable_padding">10dp</dimen>
+    <dimen name="primary_button_text_size">14sp</dimen>
+
+    <!-- Secondary button -->
+    <dimen name="secondary_button_vertical_padding">5dp</dimen>
+    <dimen name="secondary_button_horizontal_padding">20dp</dimen>
+    <dimen name="secondary_button_text_size">14sp</dimen>
+    <dimen name="secondary_button_background_border_size">1.5dp</dimen>
+    <dimen name="secondary_button_background_external_corner_radius">8dp</dimen>
+    <dimen name="secondary_button_background_internal_corner_radius">6.5dp</dimen>
+
+    <!-- Toolbar layout -->
+    <dimen name="toolbar_layout_title_horizontal_margin">16dp</dimen>
+
+    <!-- CurrencyMarketItem -->
+    <dimen name="currency_market_item_height">60dp</dimen>
+    <dimen name="currency_market_item_padding">10dp</dimen>
+    <dimen name="currency_market_item_status_bar_view_width">4dp</dimen>
+    <dimen name="currency_market_item_status_bar_view_horizontal_margin">10dp</dimen>
+    <dimen name="currency_market_item_separator_horizontal_margin">5dp</dimen>
+    <dimen name="currency_market_item_name_volume_container_margin_left">10dp</dimen>
+    <dimen name="currency_market_item_currency_text_size">16sp</dimen>
+    <dimen name="currency_market_item_market_text_size">12sp</dimen>
+    <dimen name="currency_market_item_volume_text_size">14sp</dimen>
+    <dimen name="currency_market_item_last_price_text_size">15sp</dimen>
+    <dimen name="currency_market_item_daily_change_width">85dp</dimen>
+    <dimen name="currency_market_item_daily_change_vertical_padding">5dp</dimen>
+    <dimen name="currency_market_item_daily_change_horizontal_padding">10dp</dimen>
+    <dimen name="currency_market_item_daily_change_text_size">14sp</dimen>
+
+    <!-- Info view -->
+    <dimen name="info_view_vertical_padding">50dp</dimen>
+    <dimen name="info_view_horizontal_padding">20dp</dimen>
+    <dimen name="info_view_icon_size">100dp</dimen>
+    <dimen name="info_view_margin_bottom">15dp</dimen>
+    <dimen name="info_view_caption_text_size">18sp</dimen>
+
+    <!-- Search -->
+    <dimen name="search_toolbar_query_input_horizontal_margin">16dp</dimen>
+
+    <!-- AboutActivity -->
+    <dimen name="about_activity_header_vertical_padding">20dp</dimen>
+    <dimen name="about_activity_header_horizontal_padding">15dp</dimen>
+    <dimen name="about_activity_header_margin">10dp</dimen>
+
+    <dimen name="about_activity_header_app_logo_size">80dp</dimen>
+    <dimen name="about_activity_header_app_name_text_size">18sp</dimen>
+    <dimen name="about_activity_header_app_version_text_size">16sp</dimen>
+
+    <dimen name="about_activity_header_separator_height">1dp</dimen>
+    <dimen name="about_activity_header_separator_margin_top">20dp</dimen>
+
+    <dimen name="about_activity_header_description_text_size">16sp</dimen>
+
+    <dimen name="about_activity_features_bar_vertical_margin">10dp</dimen>
+
+    <dimen name="about_activity_feature_padding">15dp</dimen>
+    <dimen name="about_activity_feature_icon_size">50dp</dimen>
+    <dimen name="about_activity_feature_title_text_size">16sp</dimen>
+
+    <dimen name="about_activity_website_button_vertical_margin">25dp</dimen>
+
+    <!-- Feedback -->
+    <dimen name="feedback_header_margin">20dp</dimen>
+    <dimen name="feedback_app_logo_size">90dp</dimen>
+    <dimen name="feedback_app_logo_margin_right">25dp</dimen>
+    <dimen name="feedback_greeting_margin_bottom">10dp</dimen>
+    <dimen name="feedback_greeting_text_size">30sp</dimen>
+    <dimen name="feedback_detailed_message_text_size">16sp</dimen>
+
+    <dimen name="feedback_footer_card_view_margin">4dp</dimen>
+    <dimen name="feedback_footer_card_view_top_bar_horizontal_padding">15dp</dimen>
+    <dimen name="feedback_footer_card_view_top_bar_vertical_padding">10dp</dimen>
+    <dimen name="feedback_footer_card_view_top_bar_new_feedback_title_text_size">16sp</dimen>
+    <dimen name="feedback_footer_feedback_text_et_padding">15dp</dimen>
+    <dimen name="feedback_footer_feedback_text_et_text_size">16sp</dimen>
+    <dimen name="feedback_footer_feedback_text_et_spacing_extra">2dp</dimen>
+
+    <!-- HelpActivity -->
+    <dimen name="help_activity_recycler_view_padding_bottom">80dp</dimen>
+
+    <!-- HelpItem -->
+    <dimen name="help_item_padding">10dp</dimen>
+
+    <dimen name="help_item_question_tv_margin_right">15dp</dimen>
+    <dimen name="help_item_question_tv_size">16sp</dimen>
+
+    <dimen name="help_item_answer_tv_margin_top">10dp</dimen>
+    <dimen name="help_item_answer_tv_margin_right">15dp</dimen>
+    <dimen name="help_item_answer_tv_text_size">14sp</dimen>
+
+    <!-- CurrencyMarketPreview -->
+    <dimen name="currency_market_preview_bottom_bar_padding">10dp</dimen>
+    <dimen name="currency_market_preview_bottom_bar_button_margin">5dp</dimen>
+    <dimen name="currency_market_preview_bottom_bar_button_vertical_padding">0dp</dimen>
+    <dimen name="currency_market_preview_bottom_bar_button_text_size">18sp</dimen>
+    <dimen name="currency_market_preview_fragment_info_view_padding_top">@dimen/info_view_vertical_padding</dimen>
+    <dimen name="currency_market_preview_fragment_info_view_padding_bottom">@dimen/info_view_vertical_padding</dimen>
+
+    <!-- SummaryFragment -->
+    <dimen name="summary_fragment_option_button_text_size">16sp</dimen>
+
+    <!-- ChartFragment -->
+    <dimen name="chart_fragment_chart_axis_text_size">10px</dimen> <!-- Has to be in PX due to MPAndroidChart -->
+    <dimen name="chart_fragment_chart_value_text_size">10px</dimen> <!-- Has to be in PX due to MPAndroidChart -->
+    <dimen name="chart_fragment_chart_left_offset">2px</dimen> <!-- Has to be in PX due to MPAndroidChart -->
+    <dimen name="chart_fragment_chart_bottom_offset">2px</dimen> <!-- Has to be in PX due to MPAndroidChart -->
+    <dimen name="chart_fragment_intervals_rg_margin_top">13dp</dimen>
+    <dimen name="chart_fragment_intervals_rg_margin_bottom">15dp</dimen>
+    <dimen name="chart_fragment_interval_radio_button_horizontal_margin">5dp</dimen>
+
+    <!-- OptionButton -->
+    <dimen name="option_button_border_width">1dp</dimen>
+    <dimen name="option_button_border_negative_margin">-2dp</dimen>
+    <dimen name="option_button_vertical_margin">10dp</dimen>
+    <dimen name="option_button_horizontal_margin">16dp</dimen>
+
+    <!-- OptionTextView -->
+    <dimen name="option_text_view_value_margin_left">5dp</dimen>
+
+    <!-- OptionEditText -->
+    <dimen name="option_edit_text_padding">10dp</dimen>
+
+    <!-- LabeledEditText -->
+    <dimen name="labeled_edit_text_label_padding">10dp</dimen>
+
+    <!-- TradeActivity -->
+    <dimen name="trade_activity_horizontal_margin">30dp</dimen>
+    <dimen name="trade_activity_user_balance_margin_top">20dp</dimen>
+    <dimen name="trade_activity_user_balance_title_text_size">18sp</dimen>
+    <dimen name="trade_activity_user_balance_container_margin_top">10dp</dimen>
+    <dimen name="trade_activity_option_button_vertical_padding">0dp</dimen>
+    <dimen name="trade_activity_option_button_text_size">16sp</dimen>
+    <dimen name="trade_activity_amount_oet_margin_top">40dp</dimen>
+    <dimen name="trade_activity_at_price_oet_margin_top">10dp</dimen>
+    <dimen name="trade_activity_input_text_size">18sp</dimen>
+    <dimen name="trade_activity_input_error_text_size">14sp</dimen>
+    <dimen name="trade_activity_details_container_vertical_margin">10dp</dimen>
+    <dimen name="trade_activity_details_container_option_tv_text_size">16sp</dimen>
+    <dimen name="trade_activity_details_container_option_tv_margin_top">5dp</dimen>
+    <dimen name="trade_activity_details_container_option_tv_user_deduction_margin_top">15dp</dimen>
+    <dimen name="trade_activity_button_margin">15dp</dimen>
+
+    <!-- DottedOptionTextView -->
+    <dimen name="dotted_option_text_view_separator_horizontal_margin">8dp</dimen>
+
+    <!-- WalletItem -->
+    <dimen name="wallet_item_padding">15dp</dimen>
+    <dimen name="wallet_item_top_bar_margin_bottom">15dp</dimen>
+    <dimen name="wallet_item_currency_long_name_tv_text_size">18sp</dimen>
+    <dimen name="wallet_item_dotv_margin_bottom">5dp</dimen>
+    <dimen name="wallet_item_dotv_text_size">16sp</dimen>
+    <dimen name="wallet_item_buttons_container_margin_top">@dimen/wallet_item_padding</dimen>
+    <dimen name="wallet_item_button_width">150dp</dimen>
+    <dimen name="wallet_item_button_height">30dp</dimen>
+    <dimen name="wallet_item_button_horizontal_margin">8dp</dimen>
+
+    <!-- OrderItem -->
+    <dimen name="order_item_padding">15dp</dimen>
+    <dimen name="order_item_top_bar_margin_bottom">15dp</dimen>
+    <dimen name="order_item_market_tv_text_size">18sp</dimen>
+    <dimen name="order_item_dotv_margin_bottom">5dp</dimen>
+    <dimen name="order_item_dotv_text_size">16sp</dimen>
+    <dimen name="order_item_cancel_btn_margin_top">@dimen/order_item_padding</dimen>
+
+    <!-- TransactionItem -->
+    <dimen name="transaction_item_padding">15dp</dimen>
+    <dimen name="transaction_item_top_bar_margin_bottom">15dp</dimen>
+    <dimen name="transaction_item_currency_tv_text_size">18sp</dimen>
+    <dimen name="transaction_item_dotv_margin_bottom">5dp</dimen>
+    <dimen name="transaction_item_dotv_text_size">16sp</dimen>
+
+    <!-- DepositFragment -->
+    <dimen name="deposit_fragment_horizontal_margin">30dp</dimen>
+    <dimen name="deposit_fragment_currency_tv_margin_top">20dp</dimen>
+    <dimen name="deposit_fragment_currency_tv_text_size">35sp</dimen>
+    <dimen name="deposit_fragment_main_container_margin_top">20dp</dimen>
+    <dimen name="deposit_fragment_option_button_height">80dp</dimen>
+    <dimen name="deposit_fragment_option_button_text_size">18sp</dimen>
+    <dimen name="deposit_fragment_hint_tv_margin_top">10dp</dimen>
+    <dimen name="deposit_fragment_hint_tv_text_size">12sp</dimen>
+    <dimen name="deposit_fragment_info_view_vertical_padding">15dp</dimen>
+    <dimen name="deposit_fragment_deposit_fee_tv_margin_top">20dp</dimen>
+    <dimen name="deposit_fragment_min_amount_tv_margin_top">5dp</dimen>
+    <dimen name="deposit_fragment_details_tv_text_size">16sp</dimen>
+    <dimen name="deposit_fragment_warning_vertical_margin">15dp</dimen>
+
+    <!-- QrDialog -->
+    <dimen name="qr_dialog_padding">25dp</dimen>
+    <dimen name="qr_dialog_title_text_size">18sp</dimen>
+    <dimen name="qr_dialog_qr_code_iv_size">160dp</dimen>
+    <dimen name="qr_dialog_qr_code_margin_top">20dp</dimen>
+    <dimen name="qr_dialog_hash_margin_top">20dp</dimen>
+    <dimen name="qr_dialog_hash_text_size">16sp</dimen>
+    <dimen name="qr_dialog_button_tv_height">40dp</dimen>
+    <dimen name="qr_dialog_button_text_size">16sp</dimen>
+    <dimen name="qr_dialog_copy_hash_btn_tv_margin_top">20dp</dimen>
+    <dimen name="qr_dialog_save_image_btn_tv_margin_top">8dp</dimen>
+
+    <!-- TicketsFragment -->
+    <dimen name="tickets_fragment_recycler_view_padding_bottom">90dp</dimen>
+
+    <!-- TicketItem -->
+    <dimen name="ticket_item_padding">15dp</dimen>
+    <dimen name="ticket_item_status_tv_margin_bottom">15dp</dimen>
+    <dimen name="ticket_item_dotv_margin_bottom">5dp</dimen>
+    <dimen name="ticket_item_dotv_text_size">16sp</dimen>
+
+    <!-- SettingItem -->
+    <dimen name="setting_item_vertical_padding">10dp</dimen>
+    <dimen name="setting_item_padding_left">10dp</dimen>
+    <dimen name="setting_item_padding_right">2dp</dimen>
+    <dimen name="setting_item_title_text_size">16sp</dimen>
+    <dimen name="setting_item_description_margin_top">2dp</dimen>
+    <dimen name="setting_item_description_text_size">12sp</dimen>
+
+    <!-- SettingSectionItem -->
+    <dimen name="setting_section_item_padding">10dp</dimen>
+    <dimen name="setting_section_item_title_text_size">14sp</dimen>
+
+    <!-- SettingsActivity -->
+    <dimen name="settings_activity_recycler_view_vertical_padding">10dp</dimen>
+    <dimen name="settings_activity_recycler_view_horizontal_padding">10dp</dimen>
+
+</resources>

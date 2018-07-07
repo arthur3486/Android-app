@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorContentContainer">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/progress_bar_size"
+        android:layout_height="@dimen/progress_bar_size"
+        android:layout_gravity="center"/>
+
+    <com.stocksexchange.android.ui.views.InfoView
+        android:id="@+id/infoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/recycler_view_padding_top"
+            android:paddingBottom="@dimen/recycler_view_padding_bottom"
+            android:paddingLeft="@dimen/recycler_view_horizontal_padding"
+            android:paddingStart="@dimen/recycler_view_horizontal_padding"
+            android:paddingRight="@dimen/recycler_view_horizontal_padding"
+            android:paddingEnd="@dimen/recycler_view_horizontal_padding"
+            android:clipToPadding="false"
+            android:overScrollMode="never"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</FrameLayout>
